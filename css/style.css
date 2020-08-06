@@ -214,7 +214,6 @@ img.svg{
 	        transition: all .3s ease;
 }
 .edina_tm_navigation_wrap .social_icons_wrap > ul > li a:hover{color: #ed2629;}
-
 /*---------------------------------------------------*/
 /*	03) EDINA MOBILE MENU
 /*---------------------------------------------------*/
@@ -1422,6 +1421,7 @@ img.svg{
 }
 .edina_tm_work_together_wrap p{
 	color: #eee;
+	margin-top: 29px;
 	margin-bottom: 29px;
 }
 .edina_tm_work_together_wrap .invite a{
