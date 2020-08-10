@@ -1,0 +1,16 @@
+/* =============================================================================
+   main
+   ========================================================================== */
+
+a {
+
+  @include hover() {
+    transition: all 1s ease;
+  }
+}
+
+//https://github.com/matthieua/WOW/issues/231
+//https://stackoverflow.com/a/52971671/3929620
+.wow {
+  visibility: hidden;
+}

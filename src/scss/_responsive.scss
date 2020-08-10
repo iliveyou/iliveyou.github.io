@@ -1,0 +1,104 @@
+/* =============================================================================
+   width
+   ========================================================================== */
+
+//https://stackoverflow.com/a/37485864   
+   
+// Smartphones (portrait)
+@media (max-width: 320px) {
+
+}
+
+// Smartphones (landscape)
+@media (min-width: 321px) {
+
+}
+
+// Smartphones (portrait and landscape)
+@media (min-device-width: 320px) and (max-device-width: 576px) {
+
+}
+
+/* da 0px a 576px */
+@include media-breakpoint-down(xs) {
+
+}
+
+/* da 576px in su */
+@include media-breakpoint-up(sm) {
+
+}
+
+/* da 0px a 768px */
+@include media-breakpoint-down(sm) {
+
+}
+
+/* da 576px a 768px */
+@include media-breakpoint-only(sm) {
+
+}
+
+/* da 768px in su */
+@include media-breakpoint-up(md) {
+
+}
+
+/* da 0px a 992px */
+@include media-breakpoint-down(md) {
+
+}
+
+/* da 768px a 992px */
+@include media-breakpoint-only(md) {
+
+}
+
+/* da 992px in su */
+@include media-breakpoint-up(lg) {
+
+}
+
+/* da 0px a 1200px */
+@include media-breakpoint-down(lg) {
+
+}
+
+/* da 992px a 1200px */
+@include media-breakpoint-only(lg) {
+
+}
+
+/* da 1200px in su */
+@include media-breakpoint-up(xl) {
+
+}
+
+
+/* =============================================================================
+   height
+   ========================================================================== */  
+ /* da 0 a 576px */
+@media (max-height: 576px) {
+
+}  
+   
+/* da 0 a 767px */
+@media (max-height: 767px) {
+
+}
+
+/* da 576px a 767px */
+@media (min-height: 576px) and (max-height: 767px) {
+
+}
+
+/* da 768px a 991px */
+@media (min-height: 768px) and (max-height: 991px) {
+
+}
+
+/* da 992px in su */
+@media (min-height: 992px)  {
+
+}
