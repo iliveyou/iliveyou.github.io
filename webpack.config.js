@@ -29,7 +29,7 @@ module.exports = (env, argv = {}) => {
 
         // development server with hot-reload
         devServer: {
-            contentBase: path.join(__dirname, 'dist'),
+            contentBase: path.join(__dirname, 'docs'),
             watchContentBase: true,
             compress: true,
             /*headers: {
@@ -51,7 +51,7 @@ module.exports = (env, argv = {}) => {
 
         output: {
             filename: 'js/app.js',
-            path: path.resolve(__dirname, 'dist/assets'),
+            path: path.resolve(__dirname, 'docs/assets'),
             publicPath: '/assets/'
         },
 
