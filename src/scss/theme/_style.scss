@@ -2058,7 +2058,7 @@ img.svg {
 .edina_tm_to_top_wrap {
   position: fixed;
   z-index: 333;
-  right: 27px;
+  right:0px;
   bottom: 50px;
   transform: rotate(-270deg);
 
@@ -2075,7 +2075,7 @@ img.svg {
 .edina_tm_to_top_wrap.opened {
   opacity: 1;
   visibility: visible;
-  bottom: 90px;
+  bottom: 70px;
 }
 
 .edina_tm_to_top_wrap a {

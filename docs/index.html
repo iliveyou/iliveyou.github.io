@@ -10,8 +10,7 @@
 
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png"/>
 
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i,800,800i"
-          rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/app.css?1"/>
 </head>
 
@@ -90,15 +89,20 @@
                 <div class="edina_tm_universal_box_wrap">
                     <div class="bg_wrap">
                         <div class="overlay_video">
-                            <div id="video-bg" data-property="{
-							 	videoURL: '//www.youtube-nocookie.com/embed/rGlqwyBqp50',
-							 	coverImage: '//i3.ytimg.com/vi/rGlqwyBqp50/maxresdefault.jpg',
-							 	containment: '#home',
-							 	showControls: false,
-							 	autoPlay: true,
-							 	loop: true,
-							 	mute: true,
-							 }"></div>
+                            <!--videoURL: '//youtu.be/rGlqwyBqp50',-->
+                            <!--videoURL: '//www.youtube.com/watch?v=rGlqwyBqp50',-->
+                            <!--videoURL: 'rGlqwyBqp50',-->
+                            <!--coverImage: '//i3.ytimg.com/vi/rGlqwyBqp50/maxresdefault.jpg',-->
+                            <div id="video-bg" class="player" data-property="{
+                                videoURL: 'rGlqwyBqp50',
+                                containment: '#home',
+                                showControls: false,
+                                autoPlay: true,
+                                loop: true,
+                                mute: true,
+                                optimizeDisplay: true,
+                                abundance: 0.08
+                            }"></div>
                         </div>
                         <div class="overlay_color video"></div>
                     </div>
@@ -782,6 +786,7 @@
 <!-- / WRAPPER ALL -->
 
 <script src="//kit.fontawesome.com/848dd343a9.js" crossorigin="anonymous"></script>
+<script src="https://www.youtube.com/iframe_api?v=3.3.3" id="YTAPI"></script>
 <script src="assets/js/app.js?1"></script>
 </body>
 </html>

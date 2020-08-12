@@ -31,7 +31,18 @@ import "magnific-popup";
 //import {jarallax, jarallaxVideo} from 'jarallax';
 //jarallaxVideo();
 
-import "jquery.mb.ytplayer";
+//https://rossta.net/blog/you-might-not-need-jquery-with-webpack.html
+//https://inopinatus.org/2019/09/14/webpacker-jquery-and-jquery-plugins/
+//https://www.threatstack.com/blog/using-webpack-build-system-in-existing-codebases
+//https://www.toptal.com/javascript/a-guide-to-managing-webpack-dependencies
+//https://stackoverflow.com/a/62859961/3929620
+//https://stackoverflow.com/a/61540437/3929620
+//https://gist.github.com/remarkablemark/13450bd0118863b6501756eee3506aa3
+//https://github.com/pupunzi/jquery.mb.YTPlayer/issues/462
+//https://github.com/pupunzi/jquery.mb.YTPlayer/issues/401#issuecomment-432232293
+//import "jquery.mb.ytplayer";
+import "./lib/jquery.mb.YTPlayer";
+
 import "waypoints/lib/jquery.waypoints";
 import "owl.carousel";
 
@@ -46,7 +57,7 @@ import './theme/init';
 (function($) {
     'use strict';
 
-    $("#video-bg").mb_YTPlayer();
+    $(".player").YTPlayer();
 
     new WOW().init();
 
