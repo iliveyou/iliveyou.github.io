@@ -1,5 +1,3 @@
-import Cookies from 'js-cookie';
-
 import "jquery.easing"
 
 import 'bootstrap/js/dist/index';
@@ -53,6 +51,8 @@ import "owl.carousel";
 import '@fancyapps/fancybox';
 
 import WOW from 'wow.js';
+
+import "cookieconsent";
 
 import './theme/plugins';
 import './theme/init';
@@ -149,6 +149,26 @@ import './theme/init';
                 }
             }
         });
+    });
+
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "rgba(255,255,255,.3)",
+                "text": "#000000"
+            },
+            "button": {
+                "background": "transparent",
+                "text": "#ed2629",
+                "border": "#ed2629"
+            }
+        },
+        "position": "bottom-left",
+        "content": {
+            "message": "I cookie ci aiutano a fornire i nostri servizi. Utilizzando tali servizi, acconsenti all’uso dei cookie.",
+            "dismiss": "Ok ho capito!",
+            "link": "Maggiori informazioni"
+        }
     });
 
 }(jQuery));
