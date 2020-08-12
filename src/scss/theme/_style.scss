@@ -750,10 +750,10 @@ img.svg {
   color: #fff;
 }
 
-.edina_tm_about_wrap .definition p {
+/*.edina_tm_about_wrap .definition p {
   color: #eee;
   margin-bottom: 20px;
-}
+}*/
 
 .edina_tm_about_wrap .sharebox ul {
   margin: 0px;
@@ -1896,7 +1896,7 @@ img.svg {
 /*	13) EDINA CONTACT
 /*---------------------------------------------------*/
 
-.edina_tm_contact_wrap {
+/*.edina_tm_contact_wrap {
   max-width: 830px;
   height: auto;
   margin: 0px auto;
@@ -1904,26 +1904,26 @@ img.svg {
   -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
   -moz-box-sizing: border-box; // Firefox, other Gecko
   box-sizing: border-box; // Opera/IE 8+
-}
+}*/
 
-.edina_tm_main_title_holder.contact {
+/*.edina_tm_main_title_holder.contact {
   padding-bottom: 65px;
-}
+}*/
 
 .edina_tm_contact_wrap .subtitle {
   text-align: center;
-  margin-bottom: 69px;
+  //margin-bottom: 69px;
 }
 
 .edina_tm_contact_wrap .subtitle p {
   color: #fff;
 }
 
-.edina_tm_contact_wrap .main_input_wrap {
+/*.edina_tm_contact_wrap .main_input_wrap {
   margin-bottom: 100px;
-}
+}*/
 
-.edina_tm_contact_wrap .main_input_wrap,
+/*.edina_tm_contact_wrap .main_input_wrap,
 .edina_tm_contact_wrap .main_input_wrap .wrap {
   width: 100%;
   height: auto;
@@ -1934,46 +1934,46 @@ img.svg {
   -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
   -moz-box-sizing: border-box; // Firefox, other Gecko
   box-sizing: border-box; // Opera/IE 8+
-}
+}*/
 
-.edina_tm_contact_wrap .main_input_wrap .wrap {
+/*.edina_tm_contact_wrap .main_input_wrap .wrap {
   margin-bottom: 30px;
-}
+}*/
 
-.edina_tm_contact_wrap .main_input_wrap .wrap input {
-  width: 100%;
-  text-align: center;
+.edina_tm_contact_wrap .main_input_wrap input {
+  //width: 100%;
+  //text-align: center;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, .2);
-  color: #fff;
+  //color: #fff;
 }
 
-.edina_tm_contact_wrap .main_input_wrap .wrap input:focus {
+.edina_tm_contact_wrap .main_input_wrap input:focus {
   outline: none;
   border-bottom-color: #fff;
 }
 
-.edina_tm_contact_wrap .main_input_wrap .wrap textarea {
-  width: 100%;
-  height: 120px;
-  text-align: center;
+.edina_tm_contact_wrap .main_input_wrap textarea {
+  //width: 100%;
+  //height: 120px;
+  //text-align: center;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, .2);
-  color: #fff;
+  //color: #fff;
 }
 
-.edina_tm_contact_wrap .main_input_wrap .wrap textarea:focus {
+.edina_tm_contact_wrap .main_input_wrap textarea:focus {
   outline: none;
   border-bottom-color: #fff;
 }
 
-.edina_tm_contact_wrap .edina_tm_button {
+/*.edina_tm_contact_wrap .edina_tm_button {
   text-align: center;
-}
+}*/
 
-.edina_tm_contact_wrap .edina_tm_button a {
+/*.edina_tm_contact_wrap .edina_tm_button a {
   color: #fff;
   text-decoration: none;
   background-color: #ed2629;
@@ -2010,7 +2010,7 @@ img.svg {
   color: #0064FF;
   margin-bottom: 7px;
   text-align: center;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	14) EDINA FOOTER
