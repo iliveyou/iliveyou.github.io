@@ -9,8 +9,32 @@ a {
   }
 }
 
-//https://github.com/matthieua/WOW/issues/231
-//https://stackoverflow.com/a/52971671/3929620
-.wow {
-  visibility: hidden;
+.fancybox-slide {
+
+  &.fancybox-slide--html > main {
+    @extend .container;
+    padding: 30px;
+    color: $gray-900;
+
+    .edina_tm_main_title_holder_wrap .title_wrap span {
+      color: $gray-900;
+    }
+
+    &.fancybox-md {
+      max-width: map-get($container-max-widths, "md");
+    }
+
+    &.fancybox-sm {
+      max-width: map-get($container-max-widths, "sm");
+    }
+
+    .fancybox-hidden {
+      display: none;
+    }
+
+    .featured-thumbnail-wrapper {
+      outline: none;
+    }
+  }
 }
+

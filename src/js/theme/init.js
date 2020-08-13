@@ -19,7 +19,7 @@
 	edina_tm_totop_myhide();
 	edina_tm_nav_bg_scroll();
 	edina_tm_anchor();
-	edina_tm_contact_form();
+	//edina_tm_contact_form();
 	edina_tm_owl_carousel();
 	edina_tm_text_animation();
 	edina_tm_animate_text();
@@ -322,7 +322,7 @@ function edina_tm_anchor(){
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-function edina_tm_contact_form(){
+/*function edina_tm_contact_form(){
 	
 	"use strict";
 	
@@ -362,7 +362,7 @@ function edina_tm_contact_form(){
 		}
 		return false; 
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // --------------------    OWL CAROUSEL    -------------

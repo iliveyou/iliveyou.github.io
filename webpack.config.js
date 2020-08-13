@@ -31,13 +31,7 @@ module.exports = (env, argv = {}) => {
         devServer: {
             contentBase: path.join(__dirname, 'docs'),
             watchContentBase: true,
-            compress: true,
-            /*headers: {
-                //https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
-                //https://web.dev/samesite-cookie-recipes/
-                //https://github.com/GoogleChromeLabs/samesite-examples/blob/master/javascript-nodejs.md
-                'Set-Cookie': 'SameSite=None; Secure',
-            }*/
+            compress: true
         },
 
         entry: [
