@@ -3,6 +3,7 @@
 //https://stevenwestmoreland.com/2018/01/how-to-include-bootstrap-in-your-project-with-webpack.html
 //https://getbootstrap.com/docs/4.0/getting-started/webpack/
 //https://riptutorial.com/it/webpack
+//https://www.netlify.com/blog/2017/11/30/starting-with-webpack-from-scratch/
 
 const path = require('path');
 const webpack = require('webpack');

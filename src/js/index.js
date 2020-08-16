@@ -43,7 +43,7 @@ jarallaxVideo();
 //import 'jquery.mb.ytplayer';
 import './lib/jquery.mb.YTPlayer';
 
-import 'waypoints/lib/jquery.waypoints';
+//import 'waypoints/lib/jquery.waypoints';
 import 'owl.carousel';
 
 //https://stackoverflow.com/a/45085355/3929620
@@ -53,6 +53,9 @@ import Typed from 'typed.js';
 import '@fancyapps/fancybox';
 
 import WOW from 'wow.js';
+
+//https://stackoverflow.com/a/53580347/3929620
+import '@fortawesome/fontawesome-free/js/all';
 
 import 'jquery.scrollto';
 
