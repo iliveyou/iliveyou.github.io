@@ -1,4 +1,4 @@
-@charset "utf-8";
+//@charset "utf-8";
 /*
 /*	Copyright (c) 2018 Marketify
 /*	Author: Marketify
@@ -28,7 +28,7 @@
 /*	01) EDINA BASE
 /*---------------------------------------------------*/
 
-html {
+/*html {
   overflow-x: hidden;
   padding: 0px;
   margin: 0px
@@ -42,9 +42,9 @@ body {
   word-wrap: break-word;
   font-weight: 400;
   background-color: #000000;
-}
+}*/
 
-svg {
+/*svg {
   fill: currentcolor;
   width: 15px;
   height: 15px;
@@ -53,9 +53,9 @@ svg {
 img.svg {
   width: 15px;
   height: 15px;
-}
+}*/
 
-.edina_tm_wrapper_all,
+/*.edina_tm_wrapper_all,
 .edina_tm_section,
 .edina_tm_content {
   width: 100%;
@@ -66,44 +66,44 @@ img.svg {
   -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
   -moz-box-sizing: border-box; // Firefox, other Gecko
   box-sizing: border-box; // Opera/IE 8+
-}
+}*/
 
-.edina_tm_content {
+/*.edina_tm_content {
   position: relative;
   z-index: 1;
-}
+}*/
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+/*::-webkit-input-placeholder { // WebKit, Blink, Edge
   color: #fff;
 }
 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: #fff;
-  opacity: 1;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+:-moz-placeholder { // Mozilla Firefox 4 to 18
   color: #fff;
   opacity: 1;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+::-moz-placeholder { // Mozilla Firefox 19+
+  color: #fff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { // Internet Explorer 10-11
   color: #fff;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder { // Microsoft Edge
   color: #fff;
 }
 
-::placeholder { /* Most modern browsers support this now. */
+::placeholder { // Most modern browsers support this now.
   color: #fff;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	02) EDINA HEADER
 /*---------------------------------------------------*/
 
-.edina_tm_header {
+/*.edina_tm_header {
   width: 100%;
   height: auto;
   clear: both;
@@ -262,7 +262,7 @@ img.svg {
 
 .edina_tm_navigation_wrap .social_icons_wrap > ul > li a:hover {
   color: #ed2629;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	03) EDINA MOBILE MENU
@@ -550,12 +550,12 @@ img.svg {
   //max-width: 40%;
 }*/
 
-.container.hero {
+/*.container.hero {
   position: static;
   width: 1000px;
-}
+}*/
 
-.edina_tm_discover_wrap {
+/*.edina_tm_discover_wrap {
   position: absolute;
   z-index: 333;
   left: 50%;
@@ -625,13 +625,13 @@ img.svg {
     -o-transform: translateX(0px);
     transform: translateX(0px);
   }
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	06) EDINA ABOUT
 /*---------------------------------------------------*/
 
-.edina_tm_about_wrap {
+/*.edina_tm_about_wrap {
   width: 100%;
   height: auto;
   clear: both;
@@ -705,7 +705,7 @@ img.svg {
   font-weight: 800;
   display: inline-block;
   font-family: "Montserrat";
-}
+}*/
 
 /*.edina_tm_about_wrap .author_wrap {
   width: 100%;
@@ -743,20 +743,20 @@ img.svg {
   box-sizing: border-box; // Opera/IE 8+
 }*/
 
-.edina_tm_about_wrap .name_holder {
+/*.edina_tm_about_wrap .name_holder {
   margin-bottom: 25px;
 }
 
 .edina_tm_about_wrap .name_holder h3 {
   color: #fff;
-}
+}*/
 
 /*.edina_tm_about_wrap .definition p {
   color: #eee;
   margin-bottom: 20px;
 }*/
 
-.edina_tm_about_wrap .sharebox ul {
+/*.edina_tm_about_wrap .sharebox ul {
   margin: 0px;
   list-style-type: none;
 }
@@ -786,13 +786,13 @@ img.svg {
 
 .edina_tm_about_wrap .sharebox ul li a:hover {
   color: #ed2629;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	07)	EDINA SERVICES
 /*---------------------------------------------------*/
 
-.edina_tm_services_total_wrap {
+/*.edina_tm_services_total_wrap {
   width: 100%;
   height: auto;
   clear: both;
@@ -827,7 +827,7 @@ img.svg {
   -webkit-box-sizing: border-box; // Safari/Chrome, other WebKit
   -moz-box-sizing: border-box; // Firefox, other Gecko
   box-sizing: border-box; // Opera/IE 8+
-}
+}*/
 
 /*.edina_tm_list_wrap > ul.total {
   margin: 0px;
@@ -1303,7 +1303,7 @@ img.svg {
 /*	09) EDINA TESTIMONIALS
 /*---------------------------------------------------*/
 
-.edina_tm_testimonial_wrap {
+/*.edina_tm_testimonial_wrap {
   width: 100%;
   height: auto;
   clear: both;
@@ -1400,13 +1400,13 @@ img.svg {
 .edina_tm_testimonial_wrap .name_holder_wrap span.job {
   color: #eee;
   font-size: 11px;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	10) EDINA NEWS
 /*---------------------------------------------------*/
 
-.edina_tm_news_wrap {
+/*.edina_tm_news_wrap {
   width: 100%;
   height: auto;
   clear: both;
@@ -1785,14 +1785,14 @@ img.svg {
   right: 13px;
   transform: rotate(135deg);
 }
-
+*/
 
 /*---------------------------------------------------*/
 /*	11) EDINA PARTNERS
 /*---------------------------------------------------*/
 
 //.edina_tm_universal_box_wrap .overlay_image.partners{background-image: url(../img/jarallax/2.jpg);}
-.edina_tm_universal_box_wrap .overlay_color.partners {
+/*.edina_tm_universal_box_wrap .overlay_color.partners {
   background-color: $gray-900; //rgba(0,0,0,.95);
 }
 
@@ -1834,13 +1834,13 @@ img.svg {
 .edina_tm_partners_wrap ul li {
   margin: 0px;
   min-height: 100px;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	12) EDINA WORK TOGETHER
 /*---------------------------------------------------*/
 
-.edina_tm_work_together_total {
+/*.edina_tm_work_together_total {
   width: 100%;
   height: auto;
   clear: both;
@@ -1891,7 +1891,7 @@ img.svg {
 
 .edina_tm_work_together_wrap .invite a:hover {
   background-color: #555;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	13) EDINA CONTACT
@@ -1911,14 +1911,14 @@ img.svg {
   padding-bottom: 65px;
 }*/
 
-.edina_tm_contact_wrap .subtitle {
+/*.edina_tm_contact_wrap .subtitle {
   text-align: center;
   //margin-bottom: 69px;
-}
+}*/
 
-.edina_tm_contact_wrap .subtitle p {
+/*.edina_tm_contact_wrap .subtitle p {
   color: #fff;
-}
+}*/
 
 /*.edina_tm_contact_wrap .main_input_wrap {
   margin-bottom: 100px;
@@ -1941,7 +1941,7 @@ img.svg {
   margin-bottom: 30px;
 }*/
 
-.edina_tm_contact_wrap .main_input_wrap input {
+/*.edina_tm_contact_wrap .main_input_wrap input {
   //width: 100%;
   //text-align: center;
   background-color: transparent;
@@ -1968,7 +1968,7 @@ img.svg {
 .edina_tm_contact_wrap .main_input_wrap textarea:focus {
   outline: none;
   border-bottom-color: #fff;
-}
+}*/
 
 /*.edina_tm_contact_wrap .edina_tm_button {
   text-align: center;
@@ -2017,7 +2017,7 @@ img.svg {
 /*	14) EDINA FOOTER
 /*---------------------------------------------------*/
 
-.edina_tm_footer_wrap {
+/*.edina_tm_footer_wrap {
   width: 100%;
   height: auto;
   clear: both;
@@ -2050,13 +2050,13 @@ img.svg {
 
 .edina_tm_footer_wrap p a:hover {
   color: #ed2629;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	15) EDINA TO TOP
 /*---------------------------------------------------*/
 
-.edina_tm_to_top_wrap {
+/*.edina_tm_to_top_wrap {
   position: fixed;
   z-index: 333;
   right:0px;
@@ -2118,7 +2118,7 @@ img.svg {
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-}
+}*/
 
 /*---------------------------------------------------*/
 /*	16) HOMEPAGE 2
@@ -2407,419 +2407,7 @@ img.svg {
     width: 100%;
     padding: 0px;
   }
-  .container {
+  /*.container {
     padding: 0px 20px !important;
-  }
+  }*/
 }
-	
-/*---------------------------------------------------*/
-/*	17) EDINA PREZZI
-/*---------------------------------------------------*/
-
-/*PRICE COLOR CODE START*/
-#generic_price_table .generic_content{
-	background-color: #fff;
-}
-
-#generic_price_table .generic_content .generic_head_price{
-	background-color: #f6f6f6;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
-	border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
-	color: #525252;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
-    color: #414141;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
-    color: #414141;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
-    color: #414141;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
-    color: #414141;
-}
-
-#generic_price_table .generic_content .generic_feature_list ul li{	
-	color: #a7a7a7;
-}
-
-#generic_price_table .generic_content .generic_feature_list ul li span{
-	color: #414141;
-}
-#generic_price_table .generic_content .generic_feature_list ul li:hover{
-	background-color: #E4E4E4;
-	border-left: 5px solid #ED2629;
-}
-
-#generic_price_table .generic_content .generic_price_btn a{
-	border: 1px solid #ED2629; 
-    color: #ED2629;
-} 
-
-#generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
-#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
-	border-color: #ED2629 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ED2629;
-	color: #fff;
-}
-
-#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
-#generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span{
-	color: #fff;
-}
-
-#generic_price_table .generic_content:hover .generic_price_btn a,
-#generic_price_table .generic_content.active .generic_price_btn a{
-	background-color: #ED2629;
-	color: #fff;
-} 
-#generic_price_table{
-	margin: 50px 0 50px 0;
-    font-family: 'Raleway', sans-serif;
-}
-.row .table{
-    padding: 28px 0;
-}
-
-/*PRICE BODY CODE START*/
-
-#generic_price_table .generic_content{
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-}
-
-#generic_price_table .generic_content .generic_head_price {
-	margin: 0 0 20px 0;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_head_content{
-	margin: 0 0 50px 0;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
-    border-style: solid;
-    border-width: 90px 1411px 23px 399px;
-	position: absolute;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head{
-	padding-top: 40px;
-	position: relative;
-	z-index: 1;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
-    font-family: "Raleway",sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag{
-	padding: 0 0 20px;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price{
-	display: block;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
-    display: inline-block;
-    font-family: "Lato",sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    vertical-align: middle;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
-    font-family: "Lato",sans-serif;
-    font-size: 60px;
-    font-weight: 300;
-    letter-spacing: -2px;
-    line-height: 60px;
-    padding: 0;
-    vertical-align: middle;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
-    display: inline-block;
-    font-family: "Lato",sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    vertical-align: bottom;
-}
-
-#generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
-    font-family: "Lato",sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    vertical-align: bottom;
-}
-
-#generic_price_table .generic_content .generic_feature_list ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-#generic_price_table .generic_content .generic_feature_list ul li{
-	font-family: "Lato",sans-serif;
-	font-size: 18px;
-	padding: 15px 0;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table .generic_content .generic_feature_list ul li:hover{
-	transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	-ms-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
-	-webkit-transition: all 0.3s ease-in-out 0s;
-
-}
-#generic_price_table .generic_content .generic_feature_list ul li .fa{
-	padding: 0 10px;
-}
-#generic_price_table .generic_content .generic_price_btn{
-	margin: 20px 0 32px;
-}
-
-#generic_price_table .generic_content .generic_price_btn a{
-    border-radius: 50px;
-	-moz-border-radius: 50px;
-	-ms-border-radius: 50px;
-	-o-border-radius: 50px;
-	-webkit-border-radius: 50px;
-    display: inline-block;
-    font-family: "Lato",sans-serif;
-    font-size: 18px;
-    outline: medium none;
-    padding: 12px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#generic_price_table .generic_content,
-#generic_price_table .generic_content:hover,
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg,
-#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg,
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head h2,
-#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head h2,
-#generic_price_table .generic_content .price,
-#generic_price_table .generic_content:hover .price,
-#generic_price_table .generic_content .generic_price_btn a,
-#generic_price_table .generic_content:hover .generic_price_btn a{
-	transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	-ms-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
-	-webkit-transition: all 0.3s ease-in-out 0s;
-} 
-@media (max-width: 320px) {	
-}
-
-@media (max-width: 767px) {
-	#generic_price_table .generic_content{
-		margin-bottom:75px;
-	}
-}
-@media (min-width: 768px) and (max-width: 991px) {
-	#generic_price_table .col-md-3{
-		float:left;
-		width:50%;
-	}
-	
-	#generic_price_table .col-md-4{
-		float:left;
-		width:50%;
-	}
-	
-	#generic_price_table .generic_content{
-		margin-bottom:75px;
-	}
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-@media (min-width: 1200px) {
-}
-#generic_price_table_home{
-	 font-family: 'Raleway', sans-serif;
-}
-
-.text-center h1,
-.text-center h1 a{
-	color: #7885CB;
-	font-size: 30px;
-	font-weight: 300;
-	text-decoration: none;
-}
-.demo-pic{
-	margin: 0 auto;
-}
-.demo-pic:hover{
-	opacity: 0.7;
-}
-
-#generic_price_table_home ul{
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
-	display: table;
-}
-#generic_price_table_home li{
-	float: left;
-}
-#generic_price_table_home li + li{
-	margin-left: 10px;
-	padding-bottom: 10px;
-}
-#generic_price_table_home li a{
-	display: block;
-	width: 50px;
-	height: 50px;
-	font-size: 0px;
-}
-#generic_price_table_home .blue{
-	background: #3498DB;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .emerald{
-	background: #ED2629;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .grey{
-	background: #7F8C8D;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .midnight{
-	background: #34495E;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .orange{
-	background: #E67E22;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .purple{
-	background: #9B59B6;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .red{
-	background: #E74C3C;
-	transition:all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .turquoise{
-	background: #1ABC9C;
-	transition: all 0.3s ease-in-out 0s;
-}
-
-#generic_price_table_home .blue:hover,
-#generic_price_table_home .emerald:hover,
-#generic_price_table_home .grey:hover,
-#generic_price_table_home .midnight:hover,
-#generic_price_table_home .orange:hover,
-#generic_price_table_home .purple:hover,
-#generic_price_table_home .red:hover,
-#generic_price_table_home .turquoise:hover{
-	border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-	transition: all 0.3s ease-in-out 0s;
-}
-#generic_price_table_home .divider{
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 20px;
-	padding: 20px;
-}
-#generic_price_table_home .divider span{
-	width: 100%;
-	display: table;
-	height: 2px;
-	background: #ddd;
-	margin: 50px auto;
-	line-height: 2px;
-}
-#generic_price_table_home .itemname{
-	text-align: center;
-	font-size: 50px ;
-	padding: 50px 0 20px ;
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 40px;
-	text-decoration: none;
-    font-weight: 300;
-}
-#generic_price_table_home .itemnametext{
-    text-align: center;
-    font-size: 20px;
-    padding-top: 5px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-#generic_price_table_home .footer{
-	padding:40px 0;
-}
-
-.price-heading{
-    text-align: center;
-}
-.price-heading h1{
-	color: #666;
-	margin: 0;
-	padding: 0 0 50px 0;
-}
-.demo-button {
-    
-    color: #ffffff;
-    display: table;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    outline-color: -moz-use-text-color;
-    outline-style: none;
-    outline-width: medium ;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-}
-.bottom_btn{
-	
-    color: #ffffff;
-    display: table;
-    font-size: 28px;
-    margin: 60px auto 20px;
-    padding: 10px 25px;
-    text-align: center;
-    text-transform: uppercase;
-}
-.demo-button:hover{
-	
-	color: #FFF;
-	text-decoration:none;
-	
-}
-.bottom_btn:hover{
-	
-	color: #FFF;
-	text-decoration:none;
-}
-
-
-/*---------------------------------------------------*/
-/*	18) EDINA PREZZI ACCESSORI
-/*---------------------------------------------------*/
-

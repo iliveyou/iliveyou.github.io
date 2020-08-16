@@ -5,17 +5,17 @@
 //
 //// Color system
 //
-//$white:    #fff !default;
+$white:    #fff !default;
 //$gray-100: #f8f9fa !default;
 //$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+//$gray-300: #dee2e6 !default;
 //$gray-400: #ced4da !default;
 //$gray-500: #adb5bd !default;
 //$gray-600: #6c757d !default;
 //$gray-700: #495057 !default;
 //$gray-800: #343a40 !default;
-//$gray-900: #212529 !default;
-//$black:    #000 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
 //
 //$grays: () !default;
 //$grays: map-merge(
@@ -45,6 +45,11 @@ $gray-300: #dee2e6 !default;
 //$cyan:    #17a2b8 !default;
 //
 //$colors: () !default;
+
+$colors: (
+        'black': $black
+);
+
 //$colors: map-merge(
 //  (
 //    "blue":       $blue,
@@ -74,6 +79,12 @@ $primary:       #ff0006 !default; //$blue !default;
 //$dark:          $gray-800 !default;
 //
 //$theme-colors: () !default;
+
+$theme-colors: (
+        'dark': $gray-900,
+        'black': $black
+);
+
 //$theme-colors: map-merge(
 //  (
 //    "primary":    $primary,
@@ -114,7 +125,7 @@ $primary:       #ff0006 !default; //$blue !default;
 //
 //$enable-caret:                                true !default;
 $enable-rounded:                              false !default; // true !default;
-//$enable-shadows:                              false !default;
+$enable-shadows:                              true !default; // false !default;
 //$enable-gradients:                            false !default;
 //$enable-transitions:                          true !default;
 //$enable-prefers-reduced-motion-media-query:   true !default;
@@ -133,8 +144,16 @@ $enable-rounded:                              false !default; // true !default;
 //// variables. Mostly focused on spacing.
 //// You can add more entries to the $spacers map, should you need more variation.
 //
-//$spacer: 1rem !default;
+$spacer: 1rem !default;
 //$spacers: () !default;
+
+$spacers: (
+        6: ($spacer * 4.5),
+        7: ($spacer * 6),
+        8: ($spacer * 7.5),
+        9: ($spacer * 9)
+);
+
 //$spacers: map-merge(
 //  (
 //    0: 0,
@@ -166,7 +185,7 @@ $enable-rounded:                              false !default; // true !default;
 //// Settings for the `<body>` element.
 //
 //$body-bg:                   $white !default;
-$body-color:                $gray-300 !default; // $gray-900 !default;
+//$body-color:                $gray-900 !default;
 //
 //
 //// Links
@@ -212,7 +231,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1200px
+  xl: 1200px // xl: 1140px
 ) !default;
 //
 //@include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -274,9 +293,9 @@ $container-max-widths: (
 //// Font, line-height, and color for body text, headings, and more.
 //
 //// stylelint-disable value-keyword-case
-//$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 //$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-//$font-family-base:            $font-family-sans-serif !default;
+$font-family-base:            "Open Sans", $font-family-sans-serif !default;
 //// stylelint-enable value-keyword-case
 //
 //$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
@@ -308,18 +327,18 @@ $container-max-widths: (
 //$display1-size:               6rem !default;
 //$display2-size:               5.5rem !default;
 //$display3-size:               4.5rem !default;
-//$display4-size:               3.5rem !default;
+$display4-size:               2.5rem !default; // 3.5rem !default;
 //
 //$display1-weight:             300 !default;
 //$display2-weight:             300 !default;
 //$display3-weight:             300 !default;
-//$display4-weight:             300 !default;
+$display4-weight:             800 !default; // 300 !default;
 //$display-line-height:         $headings-line-height !default;
 //
 //$lead-font-size:              $font-size-base * 1.25 !default;
 //$lead-font-weight:            300 !default;
 //
-//$small-font-size:             80% !default;
+$small-font-size:             85% !default;
 //
 //$text-muted:                  $gray-600 !default;
 //
@@ -730,9 +749,9 @@ $input-focus-box-shadow:                none !default; // $input-btn-focus-box-s
 //$navbar-toggler-font-size:          $font-size-lg !default;
 //$navbar-toggler-border-radius:      $btn-border-radius !default;
 //
-//$navbar-dark-color:                 rgba($white, .5) !default;
-//$navbar-dark-hover-color:           rgba($white, .75) !default;
-//$navbar-dark-active-color:          $white !default;
+$navbar-dark-color:                 $white !default; // rgba($white, .5) !default;
+$navbar-dark-hover-color:           $primary !default; // rgba($white, .75) !default;
+$navbar-dark-active-color:          $primary !default; // $white !default;
 //$navbar-dark-disabled-color:        rgba($white, .25) !default;
 //$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 //$navbar-dark-toggler-border-color:  rgba($white, .1) !default;

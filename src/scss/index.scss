@@ -1,5 +1,7 @@
 @import "bootstrap/bootstrap";
 
+@import "utils";
+
 @import "~animate.css/animate.compat.css";
 
 @import "~owl.carousel/dist/assets/owl.carousel.css";
@@ -16,7 +18,7 @@
 
 @import "~cookieconsent/build/cookieconsent.min.css";
 
-@import "theme/plugins";
+//@import "theme/plugins";
 @import "theme/style";
 
 @import "main";

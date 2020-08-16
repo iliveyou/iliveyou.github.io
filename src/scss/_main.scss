@@ -1,11 +1,90 @@
 /* =============================================================================
-   main
+   global
    ========================================================================== */
 
 a {
 
   @include hover() {
-    transition: all 1s ease;
+    @include transition($transition-base);
+  }
+}
+
+.btn {
+
+  &.rounded {
+    //@include border-radius(3rem !important);
+    border-radius: valid-radius(3rem !important); // $enable-rounded is true?
+  }
+}
+
+svg {
+  fill: currentcolor;
+}
+
+.col-hover {
+  position: relative;
+
+  .angle {
+    position: absolute;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: color('white');
+      @include transition($transition-base);
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: color('white');
+      @include transition($transition-base);
+    }
+
+    &.angle-top-left {
+      top: 0px;
+      left: 0px;
+
+      &:before {
+        width: 0px;
+        height: 2px;
+      }
+
+      &:after {
+        width: 2px;
+        height: 0px;
+      }
+    }
+
+    &.angle-bottom-right {
+      bottom: 0px;
+      right: 0px;
+      transform: rotate(180deg);
+
+      &:before {
+        width: 0px;
+        height: 2px;
+      }
+
+      &:after {
+        width: 2px;
+        height: 0px;
+      }
+    }
+  }
+
+  &:hover {
+
+    .angle {
+
+      &:before {
+        width: 20px;
+      }
+
+      &:after {
+        height: 20px;
+      }
+    }
   }
 }
 
@@ -13,12 +92,7 @@ a {
 
   &.fancybox-slide--html > main {
     @extend .container;
-    padding: 30px;
-    color: $gray-900;
-
-    .edina_tm_main_title_holder_wrap .title_wrap span {
-      color: $gray-900;
-    }
+    padding: $spacer * 3;
 
     &.fancybox-md {
       max-width: map-get($container-max-widths, "md");
@@ -38,3 +112,283 @@ a {
   }
 }
 
+.owl-theme .owl-dots .owl-dot {
+  outline: none;
+}
+
+
+/*---------------------------------------------------*/
+/*	preloader
+/*---------------------------------------------------*/
+
+.preloader-wrapper {
+  position: fixed; // TWBS .position-fixed use !important
+  display: flex; // TWBS .d-flex use !important
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .preloader-icon {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: 20px;
+      width: 20px;
+      //@include border-radius(50%);
+      border-radius: valid-radius(50%); // $enable-rounded is true?
+    }
+
+    &:before {
+      animation: ball1 1s infinite;
+      background-color: theme-color-level('primary', -3);
+      box-shadow: 30px 0 0 theme-color-level('primary', -4);
+      margin-bottom: 10px;
+    }
+
+    &:after {
+      animation: ball2 1s infinite;
+      background-color: theme-color-level('primary', -6);
+      box-shadow: 30px 0 0 color(white);
+    }
+  }
+
+  .preloader-text {
+    width: 50px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 theme-color-level('primary', -7);
+  }
+  50% {
+    box-shadow: 0 0 0 theme-color-level('primary', -7);
+    margin-bottom: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 theme-color-level('primary', -7);
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 color('white');
+  }
+  50% {
+    box-shadow: 0 0 0 color('white');
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 color('white');
+    margin-top: 0;
+  }
+}
+
+
+/*---------------------------------------------------*/
+/*	header
+/*---------------------------------------------------*/
+
+header {
+
+  .navbar {
+    @extend .py-4;
+    @include transition($transition-base);
+  }
+
+  &.scroll {
+    background-color: rgba(color('black'), .9);
+    @include box-shadow(0 1px 3px rgba(color('black'), .15));
+
+    .navbar {
+      @extend .py-2;
+    }
+  }
+}
+
+
+/*---------------------------------------------------*/
+/*	partners
+/*---------------------------------------------------*/
+
+#partners {
+
+  .owl-item {
+
+    li {
+      min-height: 100px;
+    }
+  }
+}
+
+
+/*---------------------------------------------------*/
+/*	contact
+/*---------------------------------------------------*/
+
+#contact {
+
+  input,
+  textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(color('white'), .2);
+
+    @include hover-focus() {
+      outline: none;
+      border-bottom-color: color('white');
+    }
+  }
+}
+
+
+/*---------------------------------------------------*/
+/*	scrollto
+/*---------------------------------------------------*/
+
+#scrollto-next {
+  left: 50%;
+  bottom: map-get($spacers, 5);
+  margin-left: -28px;
+  transform: rotate(-90deg);
+
+  i {
+    animation: upDown 1s linear 0s infinite;
+  }
+}
+
+#scrollto-top {
+  z-index: $zindex-tooltip;
+  position: fixed; // TWBS .position-fixed use !important
+  display: none;
+  right: -10px;
+  bottom: map-get($spacers, 5);
+  transform: rotate(-270deg);
+
+  i {
+    animation: upDown 1s linear 0s infinite;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+/*---------------------------------------------------*/
+/*	prices
+/*---------------------------------------------------*/
+
+//https://bbbootstrap.com/snippets/pricing-table-hover-effect-69254954
+.card-price {
+
+  .card-header {
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-width: 115px 1500px 0 0;
+      border-style: solid;
+      border-color: gray('200') transparent transparent gray('200');
+      z-index: 1;
+      @include transition($transition-base);
+    }
+
+    > * {
+      z-index: 2;
+    }
+
+    .card-title,
+    .h3 {
+      color: gray('700');
+      letter-spacing: 2px;
+      @include transition($transition-base);
+    }
+
+    .currency {
+      font-size: 60px;
+      letter-spacing: -2px;
+      line-height: 60px;
+    }
+
+    .cent {
+      font-size: 24px;
+    }
+
+    .month {
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+  }
+
+  .list-group-item {
+    @include transition($transition-base);
+
+    @include hover() {
+      background-color: gray('200');
+      border-left: 5px solid theme-color('primary');
+    }
+  }
+
+  &:hover,
+  &.active {
+
+    .card-header {
+
+      &:after {
+        border-color: theme-color('primary') transparent transparent theme-color('primary');
+      }
+
+      .card-title {
+        color: color('white');
+      }
+    }
+
+    .btn {
+      color: color-yiq(theme-color('primary'));
+      @include gradient-bg(theme-color('primary'));
+      border-color: theme-color('primary');
+
+      @include hover() {
+        $hover-background: darken(theme-color('primary'), 7.5%);
+        $hover-border: darken(theme-color('primary'), 10%);
+
+        color: color-yiq($hover-background);
+        @include gradient-bg($hover-background);
+        border-color: $hover-border;
+      }
+    }
+  }
+}

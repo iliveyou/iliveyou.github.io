@@ -57,6 +57,15 @@
 /* da 992px in su */
 @include media-breakpoint-up(lg) {
 
+  //https://www.geeksforgeeks.org/how-to-align-navbar-items-to-center-using-bootstrap-4/
+  .navbar-nav {
+
+    &.navbar-lg-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+  }
 }
 
 /* da 0px a 1200px */
@@ -72,6 +81,17 @@
 /* da 1200px in su */
 @include media-breakpoint-up(xl) {
 
+  .navbar-nav {
+
+    &#navbar-main {
+
+      .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 

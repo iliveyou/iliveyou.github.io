@@ -325,7 +325,10 @@ function iOSversion() {
 				setTimeout(function () {
 					jQuery(document).trigger('YTAPIReady');
 					ytp.YTAPIReady = true
-				}, 100)
+				//---------------------- start add
+				//}, 100)
+				}, 1000)
+				//---------------------- end add
 			}
 
 			function isIframe() {

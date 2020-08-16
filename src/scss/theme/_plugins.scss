@@ -150,7 +150,7 @@ pre code {
   white-space: pre-wrap;
 }*/
 
-.space10 {
+/*.space10 {
   width: 100%;
   float: left;
   clear: both;
@@ -253,7 +253,7 @@ pre code {
   float: left;
   clear: both;
   margin-bottom: 1000px;
-}
+}*/
 
 /*------------------------------------------------------------------*/
 /*	02) FORM ELEMENTS
@@ -1243,7 +1243,7 @@ pre code {
 *   Author: FriendsLaboratory
 * 	Created Date : 01-01-2017
 */
-.clearfix {
+/*.clearfix {
   *zoom: 1;
   clear: both;
 }
@@ -1257,7 +1257,7 @@ pre code {
 
 .clearfix:after {
   clear: both;
-}
+}*/
 
 /*------------------------------------------------------------------*/
 /*	04) SKELETON OR GRID
@@ -1395,7 +1395,7 @@ pre code {
 /*	05) PERFECT SCROLLBAR
 /*------------------------------------------------------------------*/
 
-.mCustomScrollbar {
+/*.mCustomScrollbar {
   -ms-touch-action: pinch-zoom;
   touch-action: pinch-zoom
 }
@@ -2695,13 +2695,13 @@ pre code {
 .mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
   background-color: #fff;
   background-color: rgba(255, 255, 255, .9)
-}
+}*/
 
 /*------------------------------------------------------------------*/
 /*	06) MAGNIFIC POPUP
 /*------------------------------------------------------------------*/
 
-.mfp-bg, .mfp-wrap {
+/*.mfp-bg, .mfp-wrap {
   position: fixed;
   left: 0;
   top: 0
@@ -3115,16 +3115,16 @@ img.mfp-img {
     padding-right: 6px
   }
 }
-
+*/
 
 /*------------------------------------------------------------------*/
 /*	07) NAV ANCHOR
 /*------------------------------------------------------------------*/
 
-.anchor_nav .current a {
-  /*	border-bottom: 2px solid #BC0127;*/
+/*.anchor_nav .current a {
+  //border-bottom: 2px solid #BC0127;
   transition: all .3s ease;
-}
+}*/
 
 /*------------------------------------------------------------------*/
 /*	08) ANIMATION
@@ -4907,7 +4907,7 @@ img.mfp-img {
 /*	10) PRELOADER SPINNER
 /*------------------------------------------------------------------*/
 
-.spinner > div {
+/*.spinner > div {
   width: 18px;
   height: 18px;
   background-color: #fff;
@@ -4947,7 +4947,7 @@ img.mfp-img {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
   }
-}
+}*/
 
 /*___________________________________________________________________________________________________________________________________________________
  _ jquery.mb.components                                                                                                                             _

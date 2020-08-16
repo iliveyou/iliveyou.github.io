@@ -8,910 +8,848 @@
     <meta name="description" content="ILIVE.YOU Streaming Services">
     <meta name="author" content="I Live You">
 
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png"/>
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png" />
 
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/app.css?1"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css?1" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-main" data-offset="70">
 
-<!-- WRAPPER ALL -->
-<div class="edina_tm_wrapper_all">
+<div class="preloader-wrapper flex-column align-items-center justify-content-center bg-dark text-white vw-100 vh-100">
+    <div class="preloader-icon"></div>
+    <!--<div class="preloader-text mt-3 small wow fadeIn">Loading<span id="typed-2"></span></div>
+    <div id="typed-2-strings" class="d-none">
+        <span>...</span>
+    </div>-->
+</div>
 
-    <div id="edina_tm_popup_blog">
+<!-- .wrapper -->
+<div class="wrapper">
+
+    <!-- header -->
+    <header class="fixed-top" >
+
+        <!-- .container -->
         <div class="container">
-            <div class="inner_popup scrollable"></div>
-        </div>
-        <span class="close"><a href="javascript:;"></a></span>
-    </div>
 
-    <!-- HEADER -->
-    <header class="edina_tm_header">
-        <div class="edina_tm_navigation_wrap">
-            <div class="container">
-                <div class="navigation_inner">
-                    <div class="logo">
-                        <a class="dark_logo" href="/"><img src="assets/img/logo/logo.png" alt=""/></a>
-                    </div>
-                    <div class="nav_list_wrap">
-                        <div class="menu">
-                            <ul class="anchor_nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">Profilo</a></li>
-                                <li><a href="#services">Servizi</a></li>
-                                <li><a href="#prices">Prezzi</a></li>
-                                <li><a href="#testimonials">Case History</a></li>
-                                <li><a href="#contact">Contatti</a></li>
-                            </ul>
-                        </div>
-                        <div class="social_icons_wrap">
-                            <ul>
-                                <li><a href="#"><i class="xcon-facebook"></i></a></li>
-                                <li><a href="#"><i class="xcon-twitter"></i></a></li>
-                                <li><a href="#"><i class="xcon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="xcon-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="edina_tm_trigger">
-                        <div class="hamburger hamburger--collapse-r">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/logo/logo.png" alt="" />
+                </a>
+
+                <div class="edina_tm_trigger">
+                    <div class="hamburger hamburger--collapse-r">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav navbar-lg-center font-family-2" id="navbar-main">
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#about">Profilo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#services">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#prices">Prezzi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#testimonials">Case History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#contact">Contatti</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
         </div>
-        <div class="edina_tm_mobile_menu_wrap">
-            <div class="mob_menu">
-                <ul class="anchor_nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Profilo</a></li>
-                    <li><a href="#services">Servizi</a></li>
-                    <li><a href="#prices">Prezzi</a></li>
-                    <li><a href="#testimonials">Case History</a></li>
-                    <li><a href="#contact">Contatti</a></li>
-                </ul>
-            </div>
-        </div>
+        <!-- /.container -->
+
     </header>
-    <!-- /HEADER -->
+    <!-- /header -->
 
-    <!-- CONTENT -->
-    <div class="edina_tm_content">
+    <!-- .content -->
+    <div class="content">
 
-        <!-- HERO -->
-        <div class="edina_tm_section" id="home">
-            <div id="particles-js"></div>
-            <div class="edina_tm_hero_header">
-                <div class="edina_tm_universal_box_wrap">
-                    <div class="bg_wrap">
-                        <div class="overlay_video">
-                            <!--videoURL: '//youtu.be/rGlqwyBqp50',-->
-                            <!--videoURL: '//www.youtube.com/watch?v=rGlqwyBqp50',-->
-                            <!--videoURL: 'rGlqwyBqp50',-->
-                            <!--coverImage: '//i3.ytimg.com/vi/rGlqwyBqp50/maxresdefault.jpg',-->
-                            <div id="video-bg" class="player" data-property="{
-                                videoURL: 'rGlqwyBqp50',
-                                containment: '#home',
-                                showControls: false,
-                                autoPlay: true,
-                                loop: true,
-                                mute: true,
-                                optimizeDisplay: true,
-                                abundance: 0.08
-                            }"></div>
-                        </div>
-                        <div class="overlay_color video"></div>
-                    </div>
-                    <div class="content hero">
-                        <div class="container h-100">
-                            <div class="row h-100 justify-content-center align-items-center">
-                                <div class="col-sm-8 col-md-6">
-                                    <div class="text-center h-100 hero_title homepage_third">
+        <!-- #home -->
+        <section id="home" class="player text-light bg-black position-relative vh-100">
 
-                                        <div class="wow fadeIn" data-wow-duration="1s">
-                                            <img class="img-fluid" src="assets/img/logo/logo-iliveyou-big.png" alt=""/>
-                                        </div>
+            <div class="bg-black opacity-7 position-absolute w-100 h-100"></div>
 
-                                        <div class="mt-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                            <span>Lo Streaming dove vuoi TU</span>
-                                        </div>
+            <!-- .container -->
+            <div class="container py-5 position-relative vh-100">
 
-                                        <div class="mt-5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                <div class="d-flex flex-column justify-content-center align-items-center text-center h-100">
 
-                                            <h4 class="text-white">Iscriviti alla nostra newsletter.</h4>
+                    <img class="img-fluid mb-1 wow fadeIn" src="assets/img/logo/logo-big.png" alt="" data-wow-duration="1s" />
 
-                                            <div class="row justify-content-center mt-3">
-                                                <div class="col-8 col-sm-12 col-md-10 col-lg-8 col-xl-6">
-
-                                                    <form data-sync class="needs-validation" novalidate method="POST" autocomplete="off" role="form" action="https://you.us17.list-manage.com/subscribe/post">
-                                                        <input type="hidden" name="u" value="7ed649265144fde9c266af4b1">
-                                                        <input type="hidden" name="id" value="fd5a1755a7">
-
-                                                        <div class="input-group">
-                                                            <input required name="MERGE0" id="MERGE0" type="email" class="form-control" placeholder="Email">
-                                                            <div class="input-group-append">
-                                                                <button class="btn btn-primary" type="submit" autocomplete="off" data-loading-text="<span class='spinner-border spinner-border-sm mr-1' role='status' aria-hidden='true'></span> Attendere&hellip;">
-                                                                    Iscriviti <i class="fa fa-at ml-1"></i>
-                                                                </button>
-                                                            </div>
-                                                            <div class="invalid-feedback"></div>
-                                                        </div>
-
-                                                        <div class="form-check small mt-1">
-                                                            <input required class="form-check-input" name="privacy" type="checkbox" value="1" id="newsletter-privacy">
-                                                            <label class="form-check-label" for="newsletter-privacy">
-                                                                Ho letto la <a data-fancybox data-type="ajax" data-filter="main" data-caption="Privacy Policy" data-src="/privacy.html" title="Privacy Policy" href="javascript:;">Privacy Policy</a> e acconsento
-                                                            </label>
-                                                            <div class="invalid-feedback"></div>
-                                                        </div>
-
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="edina_tm_discover_wrap homepage_third anchor">
-							<span>
-								<a href="#about">Scopri</a>
-							</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /HERO -->
-
-        <!-- ABOUT -->
-        <div class="edina_tm_section" id="about">
-            <div class="container">
-                <div class="edina_tm_main_title_holder_wrap about py-5">
-                    <div class="number_wrap">
-                        <span><i class="fas fa-stream"></i></span>
-                    </div>
-                    <div class="title_wrap">
-                        <span>Profilo</span>
-                    </div>
-                </div>
-                <div class="edina_tm_about_wrap homepage_second">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-4">
-                            <img class="img-fluid mb-3 mb-md-0" src="assets/img/about/1.jpg" alt="">
-                        </div>
-                        <div class="col-md-7 col-lg-8">
-                            <div class="name_holder">
-                                <h3>ILive.YOU</h3>
-                            </div>
-                            <div class="definition">
-                                <p>ILive.YOU offre streaming video in tempo reale. Streaming video H.264 di telecamere
-                                    IP in diretta sul tuo sito Web. Carica il tuo live streaming su YouTube, Twitch,
-                                    Facebook, Vimeo o qualsiasi altra soluzione di streaming come Wowza.</p>
-                                <p>Sei una parrocchia? Vuoi trasmettere dal vivo le Celebrazioni in modo automatico? Sei
-                                    una pubblica amministrazione? Con noi puoi pubblicare il consiglio comunale in live
-                                    sulle piattaforme Social. Sei una associazione sportiva che vuole trasmettere le
-                                    partite della propria squadra? Contattaci!</p>
-                            </div>
-                            <div class="sharebox">
-                                <ul>
-                                    <li class="wow fadeIn" data-wow-duration="1s"><span>Share:</span></li>
-                                    <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                        <a href="#"><i class="xcon-facebook"></i></a>
-                                    </li>
-                                    <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                                        <a href="#"><i class="xcon-twitter"></i></a>
-                                    </li>
-                                    <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                                        <a href="#"><i class="xcon-linkedin"></i></a>
-                                    </li>
-                                    <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
-                                        <a href="#"><i class="xcon-instagram"></i></a>
-                                    </li>
-                                    <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s">
-                                        <a href="#"><i class="xcon-pinterest"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /ABOUT -->
-
-        <!-- SERVICES -->
-        <div class="edina_tm_section" id="services">
-            <div class="edina_tm_services_total_wrap py-5">
-                <div class="container">
-                    <div class="edina_tm_main_title_holder_wrap">
-                        <div class="number_wrap">
-                            <span><i class="fas fa-bullseye"></i></span>
-                        </div>
-                        <div class="title_wrap">
-                            <span>Servizi Streaming</span>
-                        </div>
-                    </div>
-                    <div class="edina_tm_services_wrap">
-                        <div class="edina_tm_list_wrap" data-column="3" data-space="70">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-4 mb-3 wow fadeIn" data-wow-duration="1s">
-                                    <div class="inner_list py-3">
-                                        <div class="service_icon">
-                                            <img class="svg" src="assets/img/svg/it.svg" alt=""/>
-                                        </div>
-                                        <div class="service_title">
-                                            <h3>Consulenza</h3>
-                                        </div>
-                                        <div class="service_definition">
-                                            <p>Ti consigliamo che strumenti utilizzare per trasmettere un flusso in
-                                                H.264 (telecamere IP , USB , RaspiCam o qualsiasi codificatore
-                                                H.264..)</p>
-                                        </div>
-                                        <span class="first"></span>
-                                        <span class="second"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 mb-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                    <div class="inner_list py-3">
-                                        <div class="service_icon">
-                                            <img class="svg" src="assets/img/svg/live-stream.svg" alt=""/>
-                                        </div>
-                                        <div class="service_title">
-                                            <h3>Flusso streaming AUTOMATICO</h3>
-                                        </div>
-                                        <div class="service_definition">
-                                            <p>Trasmetti in totale autonomia e automatizzata la tua camera al tuo sito
-                                                Web , YouTube , Facebook, Twitch , Periscope, Vimeo, Wowza , AMS, Red5 e
-                                                altro.</p>
-                                        </div>
-                                        <span class="first"></span>
-                                        <span class="second"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 mb-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                    <div class="inner_list py-3">
-                                        <div class="service_icon">
-                                            <img class="svg" src="assets/img/svg/cctv.svg" alt=""/>
-                                        </div>
-                                        <div class="service_title">
-                                            <h3>Installazione</h3>
-                                        </div>
-                                        <div class="service_definition">
-                                            <p>Ti guidiamo all'installazione delle telecamere o altro hardware tramite
-                                                nostri tecnici o da remoto. Una volta installati tutto funziona in
-                                                automatico.</p>
-                                        </div>
-                                        <span class="first"></span>
-                                        <span class="second"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 mb-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                                    <div class="inner_list py-3">
-                                        <div class="service_icon">
-                                            <img class="svg" src="assets/img/svg/share.svg" alt=""/>
-                                        </div>
-                                        <div class="service_title">
-                                            <h3>Social Media</h3>
-                                        </div>
-                                        <div class="service_definition">
-                                            <p>Hai bisogno di aprire o aggiornare una pagina web? Devi gestire il tuo
-                                                canale social? Ti aiutiamo noi.</p>
-                                        </div>
-                                        <span class="first"></span>
-                                        <span class="second"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 mb-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                                    <div class="inner_list py-3">
-                                        <div class="service_icon">
-                                            <img class="svg" src="assets/img/svg/director.svg" alt=""/>
-                                        </div>
-                                        <div class="service_title">
-                                            <h3>Regia</h3>
-                                        </div>
-                                        <div class="service_definition">
-                                            <p>Per eventi o manifestazioni in LIVE c'è la possibilità di gestire anche
-                                                una regia.</p>
-                                        </div>
-                                        <span class="first"></span>
-                                        <span class="second"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 mb-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
-                                    <div class="inner_list py-3">
-                                        <div class="service_icon">
-                                            <img class="svg" src="assets/img/svg/platform.svg" alt=""/>
-                                        </div>
-                                        <div class="service_title">
-                                            <h3>Software dedicati</h3>
-                                        </div>
-                                        <div class="service_definition">
-                                            <p>Se hai bisogno di un software personalizzato per la gestione dello
-                                                streaming ti aiutiamo a trovarlo o farlo.</p>
-                                        </div>
-                                        <span class="first"></span>
-                                        <span class="second"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /SERVICES -->
-
-
-        <!-- PREZZI -->
-        <div class="edina_tm_section" id="portfolio">
-
-			<div class="container">
-                <div class="edina_tm_portfolio_wrap py-5">
-                    <div class="edina_tm_main_title_holder_wrap portfolio">
-                        <div class="number_wrap">
-                            <span><i class="fas fa-money-bill"></i></span>
-                        </div>
-                        <div class="title_wrap">
-                            <span>Prezzi</span>
-                        </div>
-                    </div>
-					
-					
-
-			<!-- ========================  
-				TABELLA PREZZI	 
-			  ========================	-->
-					  
-					<div id="generic_price_table">   
-					<section>
-							<div class="container">
-								<div class="row">
-									<div class="col-md-12">
-										<!--PRICE HEADING START-->
-										<div class="price-heading clearfix">
-											<h1>Listino servizi offerti</h1>
-										</div>
-										<!--//PRICE HEADING END-->
-									</div>
-								</div>
-							</div>
-							<div class="container">
-								
-								<!--BLOCK ROW START-->
-								<div class="row">
-									<div class="col-md-4">
-									
-										<!--PRICE CONTENT START-->
-										<div class="generic_content clearfix">
-											
-											<!--HEAD PRICE DETAIL START-->
-											<div class="generic_head_price clearfix">
-											
-												<!--HEAD CONTENT START-->
-												<div class="generic_head_content clearfix">
-												
-													<!--HEAD START-->
-													<div class="head_bg"></div>
-													<div class="head">
-														<span>Standard</span>
-													</div>
-													<!--//HEAD END-->
-													
-												</div>
-												<!--//HEAD CONTENT END-->
-												
-												<!--PRICE START-->
-												<div class="generic_price_tag clearfix">	
-													<span class="price">
-														<span class="sign">€</span>
-														<span class="currency">15</span>
-														<span class="cent">.00</span>
-														<span class="month">/MESE</span>
-													</span>
-												</div>
-												<!--//PRICE END-->
-												
-											</div>                            
-											<!--//HEAD PRICE DETAIL END-->
-											
-											<!--FEATURE LIST START-->
-											<div class="generic_feature_list">
-												<ul>
-													<li><span>Smart </span> live streaming 24h</li>
-													<li><span><i class="fab fa-youtube"></i></span> Canale Youtube</li>
-													<li><span>5</span> ore Live Chat & Email, Tel Support</li>
-												</ul>
-											</div>
-											<!--//FEATURE LIST END-->											
-											<!--BUTTON START-->
-											<div class="generic_price_btn clearfix">
-												<a class="" href="">Sign up</a>
-											</div>
-											<!--//BUTTON END-->
-											
-										</div>
-										<!--//PRICE CONTENT END-->
-											
-									</div>
-									
-									<div class="col-md-4">
-									
-										<!--PRICE CONTENT START-->
-										<div class="generic_content active clearfix">
-											
-											<!--HEAD PRICE DETAIL START-->
-											<div class="generic_head_price clearfix">
-											
-												<!--HEAD CONTENT START-->
-												<div class="generic_head_content clearfix">
-												
-													<!--HEAD START-->
-													<div class="head_bg"></div>
-													<div class="head">
-														<span>Premium</span>
-													</div>
-													<!--//HEAD END-->
-													
-												</div>
-												<!--//HEAD CONTENT END-->
-												
-												<!--PRICE START-->
-												<div class="generic_price_tag clearfix">	
-													<span class="price">
-														<span class="sign">€</span>
-														<span class="currency">25</span>
-														<span class="cent">.00</span>
-														<span class="month">/MESE</span>
-													</span>
-												</div>
-												<!--//PRICE END-->
-												
-											</div>                            
-											<!--//HEAD PRICE DETAIL END-->
-											
-											<!--FEATURE LIST START-->
-											<div class="generic_feature_list">
-												<ul>
-													<li><span>Smart </span> live streaming 24h</li>
-													<li><span><i class="fab fa-youtube"></i></span> Canale Youtube</li>
-													<li><span>10</span> ore Live Chat & Email, Tel Support</li>
-													<li><span>Custom </span> domain address</li>
-													<li><span>NO</span> Ads on stream page</li>
-												</ul>
-											</div>
-											<!--//FEATURE LIST END-->
-											
-											<!--BUTTON START-->
-											<div class="generic_price_btn clearfix">
-												<a class="" href="">Sign up</a>
-											</div>
-											<!--//BUTTON END-->
-											
-										</div>
-										<!--//PRICE CONTENT END-->
-											
-									</div>
-									<div class="col-md-4">
-									
-										<!--PRICE CONTENT START-->
-										<div class="generic_content clearfix">
-											
-											<!--HEAD PRICE DETAIL START-->
-											<div class="generic_head_price clearfix">
-											
-												<!--HEAD CONTENT START-->
-												<div class="generic_head_content clearfix">
-												
-													<!--HEAD START-->
-													<div class="head_bg"></div>
-													<div class="head">
-														<span>Business</span>
-													</div>
-													<!--//HEAD END-->
-													
-												</div>
-												<!--//HEAD CONTENT END-->
-												
-												<!--PRICE START-->
-												<div class="generic_price_tag clearfix">	
-													<span class="price">
-														<span class="sign">€</span>
-														<span class="currency">80</span>
-														<span class="cent">.00</span>
-														<span class="month">/MESE</span>
-													</span>
-												</div>
-												<!--//PRICE END-->
-												
-											</div>                            
-											<!--//HEAD PRICE DETAIL END-->
-											
-											<!--FEATURE LIST START-->
-											<div class="generic_feature_list">
-												<ul>
-													<li><span>Smart </span> live streaming 24h</li>
-													<li><span><i class="fab fa-youtube"></i></span> Canale Youtube</li>
-													<li><span>24/7</span> ore Live Chat & Email, Tel Support</li>
-													<li><span>Custom </span> domain address</li>
-													<li><span>NO</span> Ads on stream page</li>
-													<li><span>2000+</span> concurrent viewers</li>
-													<li><span>NO</span> logo sul video tramite reastreamer</li>
-												</ul>
-											</div>
-											<!--//FEATURE LIST END-->
-											
-											<!--BUTTON START-->
-											<div class="generic_price_btn clearfix">
-												<a class="" href="">Sign up</a>
-											</div>
-											<!--//BUTTON END-->
-											
-										</div>
-										<!--//PRICE CONTENT END-->
-											
-									</div>
-								</div>	
-								<!--//BLOCK ROW END-->
-								<!--//BLOCK SERVIZI AVVESSORI START-->
-								
-								
-										<div class="container">
-
-										  <!-- Page Heading -->
-										  <h1 class="my-4">
-										  </h1>
-										<div class="container">
-											<div class="row">
-												<div class="col-md-12">
-													<!--PRICE HEADING START-->
-													<div class="price-heading clearfix">
-														<h1>Servizi Accessori per tutti i piani</h1>
-													</div>
-													<!--//PRICE HEADING END-->
-												</div>
-											</div>
-										</div>
-										  <div class="row">
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/hardware.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">Video hardware</a>
-												  </h4>
-												  <p class="card-text">Fornitura hardware video (ipcamera e accessori)</p>
-												</div>
-											  </div>
-											</div>
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/dvr.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">DVR Recording</a>
-												  </h4>
-												  <p class="card-text">Installazione apparato nvr o dvr per registrazioni</p>
-												</div>
-											  </div>
-											</div>
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/collaudo.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">Local Work</a>
-												  </h4>
-												  <p class="card-text">Sopralluogo, installazione e collaudo</p>
-												</div>
-											  </div>
-											</div>
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/plugin.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">Embedding web</a>
-												  </h4>
-												  <p class="card-text">Widget sul sito</p>
-												</div>
-											  </div>
-											</div>
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/lock.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">Area Privata</a>
-												  </h4>
-												  <p class="card-text">Live area riservata sul sito per utenti registrati</p>
-												</div>
-											  </div>
-											</div>
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/extract.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">Estrazione video</a>
-												  </h4>
-												  <p class="card-text">Recupero flussi video</p>
-												</div>
-											  </div>
-											</div>
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/schedule.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">Schedule streaming</a>
-												  </h4>
-												  <p class="card-text">I flussi video possono essere programmati a seconda delle esigenze</p>
-												</div>
-											  </div>
-											</div>
-											<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-											  <div class="card h-100 border-0">
-												<a href="#"><img class="card-img-top" src="assets/img/accessory/youtube-managing.png" alt=""></a>
-												<div class="card-body">
-												  <h4 class="card-title">
-													<a href="#">Apertura canale Youtube</a>
-												  </h4>
-												  <p class="card-text">Provvediamo all'apertura del famoso canale social per essere più vicino ai tuoi followers</p>
-												</div>
-											  </div>
-											</div>
-										  </div>
-										  <!-- /.row -->
-
-										  <!-- Pagination -->
-										
-
-										</div>
-						
-								<!--//BLOCK SERVIZI AVVESSORI END-->
-							</div>
-						</section>             
-						
-					</div>
-
+                    <div class="typed-wrap mb-5 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <h4 class="text-primary text-uppercase">
+                            &nbsp;<span id="typed-1"></span>&nbsp;
+                        </h4>
+                        <div id="typed-1-strings" class="d-none">
+                            <span>Lo Streaming dove vuoi TU</span>
+                            <span>Lorem ipsum dolor sit amet</span>
+                            <span>consectetur adipiscing elit</span>
+                            <span>Curabitur sit amet efficitur velit</span>
+                            <span>sed accumsan turpis</span>
+                            <span>Etiam vel vehicula leo</span>
+                            <span>ac elementum nisl</span>
+                            <span>Nullam hendrerit sit amet nisi vitae tempor</span>
+                            <span>Quisque commodo</span>
+                            <span>enim ac iaculis sodales</span>
+                            <span>lorem elit fringilla mi</span>
+                            <span>et convallis tortor neque non tortor</span>
+                            <span>Mauris malesuada eget quam sit amet elementum</span>
+                            <span>Praesent nec consectetur ipsum</span>
+                            <span>sed faucibus augue</span>
+                            <span>Sed facilisis posuere ante</span>
+                            <span>varius iaculis erat egestas id</span>
+                            <span>Proin porttitor consequat leo</span>
+                            <span>at commodo nibh pharetra non</span>
+                            <span>Nam magna dolor</span>
+                            <span>suscipit non molestie vitae</span>
+                            <span>dictum ac dui</span>
+                            <span>Cras bibendum est mauris</span>
+                            <span>ornare feugiat dolor tincidunt non</span>
+                            <span>Fusce gravida sodales semper</span>
+                            <span>Nam ultricies eleifend massa</span>
+                            <span>in dapibus velit condimentum a</span>
+                            <span>Integer aliquet magna quam</span>
+                            <span>et consectetur sem faucibus ac</span>
+                            <span>Vivamus bibendum malesuada sem</span>
+                            <span>at eleifend velit aliquet ut</span>
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </div>
-        <!-- /PRICES -->
+                    <div class="w-100 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
 
-        <!-- TESTIMONIALS -->
-        <div class="edina_tm_section" id="testimonials">
-            <div class="edina_tm_testimonial_wrap">
-                <div class="edina_tm_universal_box_wrap py-5">
-                    <div class="bg_wrap hero">
-                        <div class="overlay_image testimonial jarallax" data-speed="0"></div>
-                        <div class="overlay_color testimonial"></div>
-                    </div>
-                    <div class="content testimonial">
-                        <div class="edina_tm_main_title_holder_wrap testimonial">
+                        <h5 class="text-white mb-2">
+                            Iscriviti alla nostra newsletter
+                        </h5>
 
-                            <div class="number_wrap">
-                                <span><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
-                            </div>
-                            <div class="title_wrap">
-                                <span>Case History</span>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="carousel_wrap">
-                                <ul class="owl-carousel">
-                                    <li class="item">
-                                        <div class="inner">
-                                            <div class="image_holder">
-                                                <a href="https://www.youtube.com/c/parrocchiamonteforte/live"
-                                                   target="_blank"><img border="0" alt="Monteforte"
-                                                                        src="assets/img/clients/1.jpg"></a>
-                                            </div>
-                                            <div class="definition">
-                                                <p>Tutte le celebrazioni possono essere viste dal vivo sulla piattaforma
-                                                    Youtube e dal sito.</p>
-                                            </div>
-                                            <div class="svg_wrap">
-                                                <i class="xcon-quote-left"></i>
-                                            </div>
-                                            <div class="name_holder_wrap">
-                                                <span class="name">Parrocchia Monteforte d'Alpone (VR)</span>
-                                                <span class="job">AutoLive Streaming on Youtube</span>
-                                            </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 col-md-5 col-lg-4 col-xl-3">
+
+                                <form data-sync class="needs-validation" novalidate method="POST" autocomplete="off" role="form" action="https://you.us17.list-manage.com/subscribe/post">
+                                    <input type="hidden" name="u" value="7ed649265144fde9c266af4b1">
+                                    <input type="hidden" name="id" value="fd5a1755a7">
+
+                                    <div class="input-group">
+                                        <input required name="MERGE0" id="MERGE0" type="email"
+                                               class="form-control" placeholder="Email">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit" autocomplete="off" data-loading-text="<span class='spinner-border spinner-border-sm mr-1' role='status' aria-hidden='true'></span> Attendere&hellip;">
+                                                Iscriviti <i class="fa fa-at ml-1"></i>
+                                            </button>
                                         </div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="inner">
-                                            <div class="image_holder">
-                                                <a href="https://www.parrocchianegrar.it/" target="_blank"><img
-                                                        border="0" alt="Negrar" src="assets/img/clients/2.jpg"></a>
-                                            </div>
-                                            <div class="definition">
-                                                <p>Tutte le celebrazioni possono essere viste dal vivo dal sito della
-                                                    parrocchia.</p>
-                                            </div>
-                                            <div class="svg_wrap">
-                                                <i class="xcon-quote-left"></i>
-                                            </div>
-                                            <div class="name_holder_wrap">
-                                                <span class="name">Parrocchia di Negrar (VR)</span>
-                                                <span class="job">AutoLive Streaming</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="inner">
-                                            <div class="image_holder">
-                                                <a href="#contact"><img border="0" alt="Negrar"
-                                                                        src="assets/img/clients/3.jpg"></a>
-                                            </div>
-                                            <div class="definition">
-                                                <p>Il prossimo case History sara il tuo?</p>
-                                            </div>
-                                            <div class="svg_wrap">
-                                                <i class="xcon-quote-left"></i>
-                                            </div>
-                                            <div class="name_holder_wrap">
-                                                <span class="name">Per maggiori informazioni</span>
-                                                <span class="job">Contattaci</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /TESTIMONIALS -->
-
-        <!-- PARTNERS -->
-        <div class="edina_tm_section">
-            <div class="edina_tm_partners_wrap_total">
-                <div class="edina_tm_universal_box_wrap">
-                    <div class="bg_wrap">
-                        <div class="overlay_image partners jarallax" data-speed="0"></div>
-                        <div class="overlay_color partners"></div>
-                    </div>
-                    <div class="content partners">
-                        <div class="container">
-                            <div class="edina_tm_partners_wrap">
-                                <ul class="owl-carousel">
-                                    <li class="item d-flex align-items-center">
-                                        <a class="d-inline-block w-100" href="https://ewake.it" target="_blank">
-                                            <img src="assets/img/partners/ewake.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="item d-flex align-items-center">
-                                        <a class="d-inline-block w-100" href="javascript:;">
-                                            <img src="assets/img/partners/gxcom.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="item d-flex align-items-center">
-                                        <a class="d-inline-block w-100" href="https://prosmedia.org" target="_blank">
-                                            <img src="assets/img/partners/prosmedia.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="item d-flex align-items-center">
-                                        <a class="d-inline-block w-100" href="javascript:;">
-                                            <img src="assets/img/partners/5.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="item d-flex align-items-center">
-                                        <a class="d-inline-block w-100" href="javascript:;">
-                                            <img src="assets/img/partners/6.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="item d-flex align-items-center">
-                                        <a class="d-inline-block w-100" href="javascript:;">
-                                            <img src="assets/img/partners/7.png" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li class="item d-flex align-items-center">
-                                        <a class="d-inline-block w-100" href="javascript:;">
-                                            <img src="assets/img/partners/3.png" alt=""/>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /PARTNERS -->
-
-        <!-- CONTACT -->
-        <div class="edina_tm_section mb-5 pb-5" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="edina_tm_main_title_holder_wrap contact">
-                            <div class="number_wrap">
-                                <span><i class="fas fa-info-circle"></i></span>
-                            </div>
-                            <div class="title_wrap">
-                                <span>Contattaci</span>
-                            </div>
-                        </div>
-                        <div class="edina_tm_contact_wrap">
-                            <div class="short_info">
-                                <div class="subtitle">
-                                    <p class="wow fadeIn" data-wow-duration="1s">Domande? Scrivici, ti risponderemo al più presto.</p>
-                                </div>
-                            </div>
-                            <div class="main_input_wrap">
-                                <form data-sync class="needs-validation" novalidate method="POST" autocomplete="off" role="form" action="https://formspree.io/mgenqldw">
-
-                                    <div class="form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                                        <input required class="form-control text-center text-white" name="name" type="text" placeholder="Nome">
                                         <div class="invalid-feedback"></div>
                                     </div>
 
-                                    <div class="form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                        <input required class="form-control text-center text-white" name="email" type="email" placeholder="Email">
-                                        <div class="invalid-feedback"></div>
-                                    </div>
-
-                                    <div class="form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                        <textarea required class="form-control text-center text-white" name="message" rows="5" placeholder="Messaggio"></textarea>
-                                        <div class="invalid-feedback"></div>
-                                    </div>
-
-                                    <div class="form-check text-center text-muted wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                                        <input required class="form-check-input" name="privacy" type="checkbox" value="1" id="contact-privacy">
-                                        <label class="form-check-label" for="contact-privacy">
-                                            Ho letto la <a data-fancybox data-type="ajax" data-filter="main" data-caption="Privacy Policy" data-src="/privacy.html" title="Privacy Policy" href="javascript:;">Privacy Policy</a> e acconsento
+                                    <div class="form-check text-white-50 small mt-1">
+                                        <input required class="form-check-input" name="privacy" type="checkbox" value="1" id="newsletter-privacy">
+                                        <label class="form-check-label" for="newsletter-privacy">
+                                            Ho letto la <a data-fancybox data-type="ajax"
+                                                           data-filter="main"
+                                                           data-caption="Privacy Policy"
+                                                           data-src="/privacy.html"
+                                                           title="Privacy Policy"
+                                                           href="javascript:;">Privacy Policy</a> e acconsento
                                         </label>
                                         <div class="invalid-feedback"></div>
-                                    </div>
-
-                                    <br>
-
-                                    <div class="edina_tm_button text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                                        <button class="btn btn-primary" type="submit" autocomplete="off" data-loading-text="<span class='spinner-border spinner-border-sm mr-1' role='status' aria-hidden='true'></span> Attendere&hellip;">
-                                            Invia <i class="fa fa-paper-plane ml-1"></i>
-                                        </button>
                                     </div>
 
                                 </form>
                             </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
-        </div>
-        <!-- /CONTACT -->
 
-        <!-- FOOTER -->
-        <div class="edina_tm_section">
-            <div class="edina_tm_footer_wrap">
-                <p class="wow fadeIn" data-wow-duration="1s">&copy; Copyright 2020 - <b>I Live You</b></p>
             </div>
-        </div>
-        <!-- /FOOTER -->
+            <!-- /.container -->
+
+            <a id="scrollto-next" class="scrollto position-absolute text-uppercase text-decoration-none small" href="#about">
+                <i class="fas fa-chevron-left align-middle"></i> Scopri
+            </a>
+
+        </section>
+        <!-- /#home -->
+
+        <!-- #about -->
+        <section id="about" class="text-light bg-black">
+
+            <!-- .container -->
+            <div class="container py-7">
+
+                <!-- .section-title -->
+                <div class="section-title text-center">
+
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class="bg-primary py-2 mb-3 display-4">
+                                <i class="fas fa-stream"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="font-family-2 mb-6 display-4">
+                        Profilo
+                    </h2>
+
+                </div>
+                <!-- /.section-title -->
+
+                <!-- .section-content -->
+                <div class="section-content">
+
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4">
+                            <img class="img-fluid mb-3 mb-md-0" src="assets/img/about/1.jpg" alt="">
+                        </div>
+                        <div class="col-md-7 col-lg-8">
+                            <h3 class="mb-3">ILive.YOU</h3>
+
+                            <p>ILive.YOU offre streaming video in tempo reale. Streaming video H.264 di telecamere
+                                IP in diretta sul tuo sito Web. Carica il tuo live streaming su YouTube, Twitch,
+                                Facebook, Vimeo o qualsiasi altra soluzione di streaming come Wowza.</p>
+                            <p>Sei una parrocchia? Vuoi trasmettere dal vivo le Celebrazioni in modo automatico? Sei
+                                una pubblica amministrazione? Con noi puoi pubblicare il consiglio comunale in live
+                                sulle piattaforme Social. Sei una associazione sportiva che vuole trasmettere le
+                                partite della propria squadra? Contattaci!</p>
+
+                            <ul class="list-inline">
+                                <li class="list-inline-item wow fadeIn" data-wow-duration="1s">
+                                    Share:
+                                </li>
+                                <li class="list-inline-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                                    <a href="javascript:;"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li class="list-inline-item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+                                    <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s">
+                                    <a href="javascript:;"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.section-content -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#about -->
+
+        <!-- #services -->
+        <section id="services" class="text-light bg-dark position-relative jarallax" style="background-image: url(assets/img/jarallax/2.jpg);">
+
+            <div class="bg-black opacity-8 position-absolute w-100 h-100"></div>
+
+            <!-- .container -->
+            <div class="container py-7 position-relative">
+
+                <!-- .section-title -->
+                <div class="section-title text-center">
+
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class="bg-primary py-2 mb-3 display-4">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="font-family-2 mb-6 display-4">
+                        Servizi Streaming
+                    </h2>
+
+                </div>
+                <!-- /.section-title -->
+
+                <!-- .section-content -->
+                <div class="section-content text-center">
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 mb-3 pt-3 col-hover wow fadeIn" data-wow-duration="1s">
+                            <img class="text-primary mb-3 w-50 h-50 w-sm-25 h-sm-25" src="assets/img/svg/it.svg" alt="" />
+                            <h3 class="mb-3">Consulenza</h3>
+                            <p>Ti consigliamo che strumenti utilizzare per trasmettere un flusso in
+                                H.264 (telecamere IP, USB, RaspiCam o qualsiasi codificatore
+                                H.264..)</p>
+                            <div class="angle angle-top-left"></div>
+                            <div class="angle angle-bottom-right"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3 pt-3 col-hover wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <img class="text-primary mb-3 w-50 h-50 w-sm-25 h-sm-25" src="assets/img/svg/live-stream.svg" alt="" />
+                            <h3 class="mb-3">Flusso streaming AUTOMATICO</h3>
+                            <p>Trasmetti in totale autonomia e automatizzata la tua camera al tuo sito
+                                Web, YouTube, Facebook, Twitch, Periscope, Vimeo, Wowza , AMS, Red5 e
+                                altro.</p>
+                            <div class="angle angle-top-left"></div>
+                            <div class="angle angle-bottom-right"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3 pt-3 col-hover wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                            <img class="text-primary mb-3 w-50 h-50 w-sm-25 h-sm-25" src="assets/img/svg/cctv.svg" alt=""/>
+                            <h3 class="mb-3">Installazione</h3>
+                            <p>Ti guidiamo all'installazione delle telecamere o altro hardware tramite
+                                nostri tecnici o da remoto. Una volta installati tutto funziona in
+                                automatico.</p>
+                            <div class="angle angle-top-left"></div>
+                            <div class="angle angle-bottom-right"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3 pt-3 col-hover wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                            <img class="text-primary mb-3 w-50 h-50 w-sm-25 h-sm-25" src="assets/img/svg/share.svg" alt="" />
+                            <h3 class="mb-3">Social Media</h3>
+                            <p>Hai bisogno di aprire o aggiornare una pagina web? Devi gestire il tuo
+                                canale social? Ti aiutiamo noi.</p>
+                            <div class="angle angle-top-left"></div>
+                            <div class="angle angle-bottom-right"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3 pt-3 col-hover wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                            <img class="text-primary mb-3 w-50 h-50 w-sm-25 h-sm-25" src="assets/img/svg/director.svg" alt="" />
+                            <h3 class="mb-3">Regia</h3>
+                            <p>Per eventi o manifestazioni in LIVE c'è la possibilità di gestire anche
+                                una regia.</p>
+                            <div class="angle angle-top-left"></div>
+                            <div class="angle angle-bottom-right"></div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-3 pt-3 col-hover wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+                            <img class="text-primary mb-3 w-50 h-50 w-sm-25 h-sm-25" src="assets/img/svg/platform.svg" alt="" />
+                            <h3 class="mb-3">Software dedicati</h3>
+                            <p>Se hai bisogno di un software personalizzato per la gestione dello
+                                streaming ti aiutiamo a trovarlo o farlo.</p>
+                            <div class="angle angle-top-left"></div>
+                            <div class="angle angle-bottom-right"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.section-content -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#services -->
+
+        <!-- #prices -->
+        <section id="prices" class="text-light bg-black">
+
+            <!-- .container -->
+            <div class="container py-7">
+
+                <!-- .section-title -->
+                <div class="section-title text-center">
+
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class="bg-primary py-2 mb-3 display-4">
+                                <i class="fas fa-money-bill"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="font-family-2 mb-6 display-4">
+                        Prezzi
+                    </h2>
+
+                </div>
+                <!-- /.section-title -->
+
+                <!-- .section-content -->
+                <div class="section-content text-center">
+
+                    <h2 class="font-family-2 mb-5 text-muted">
+                        Piani offerti
+                    </h2>
+
+                    <!-- .row -->
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <div class="card card-price font-family-3 text-muted overflow-hidden border-0">
+
+                                <div class="card-header pt-5 pb-4 border-0">
+                                    <h3 class="card-title position-relative text-uppercase mb-5">Standard</h3>
+                                    <p class="h3 position-relative font-weight-light mb-0 d-flex justify-content-center">
+                                        <span class="sign align-self-center">€</span>
+                                        <span class="currency align-self-center px-1">15</span>
+                                        <span class="cent align-self-center pt-3">.00</span>
+                                        <span class="month text-uppercase align-self-end">/MESE</span>
+                                    </p>
+                                </div>
+                                <div class="card-body px-0">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">Smart</span> live streaming 24h</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark"><i class="fab fa-youtube"></i></span> Canale YouTube</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">5</span> ore/anno Live Chat, Email & Tel Support</li>
+                                    </ul>
+                                    <a class="scrollto btn btn-lg btn-outline-primary rounded text-uppercase py-2 px-4 my-4" href="#contact">
+                                        Sign up
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="card card-price font-family-3 text-muted overflow-hidden border-0 active">
+
+                                <div class="card-header pt-5 pb-4 border-0">
+                                    <h3 class="card-title position-relative text-uppercase mb-5">Premium</h3>
+                                    <p class="h3 position-relative font-weight-light mb-0 d-flex justify-content-center">
+                                        <span class="sign align-self-center">€</span>
+                                        <span class="currency align-self-center px-1">25</span>
+                                        <span class="cent align-self-center pt-3">.00</span>
+                                        <span class="month text-uppercase align-self-end">/MESE</span>
+                                    </p>
+                                </div>
+                                <div class="card-body px-0">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">Smart</span> live streaming 24h</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark"><i class="fab fa-youtube"></i></span> Canale YouTube</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">10</span> ore/anno Live Chat, Email & Tel Support</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">Custom</span> domain address</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">NO</span> Ads on stream page</li>
+                                    </ul>
+                                    <a class="scrollto btn btn-lg btn-outline-primary rounded text-uppercase py-2 px-4 my-4" href="#contact">
+                                        Sign up
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="card card-price font-family-3 text-muted overflow-hidden border-0">
+
+                                <div class="card-header pt-5 pb-4 border-0">
+                                    <h3 class="card-title position-relative text-uppercase mb-5">Business</h3>
+                                    <p class="h3 position-relative font-weight-light mb-0 d-flex justify-content-center">
+                                        <span class="sign align-self-center">€</span>
+                                        <span class="currency align-self-center px-1">80</span>
+                                        <span class="cent align-self-center pt-3">.00</span>
+                                        <span class="month text-uppercase align-self-end">/MESE</span>
+                                    </p>
+                                </div>
+                                <div class="card-body px-0">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">Smart</span> live streaming 24h</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark"><i class="fab fa-youtube"></i></span> Canale YouTube</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">24/7</span> ore/anno Live Chat, Email & Tel Support</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">Custom</span> domain address</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">NO</span> Ads on stream page</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">2000+</span> concurrent viewers</li>
+                                        <li class="list-group-item border-bottom-0"><span class="font-weight-bold text-dark">NO</span> logo sul video</li>
+                                    </ul>
+                                    <a class="scrollto btn btn-lg btn-outline-primary rounded text-uppercase py-2 px-4 my-4" href="#contact">
+                                        Sign up
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.section-content -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#prices -->
+
+        <!-- #accessory -->
+        <section id="accessory" class="bg-dark">
+
+            <!-- .container -->
+            <div class="container py-7">
+
+                <!-- .section-content -->
+                <div class="section-content text-dark text-center">
+
+                    <h2 class="font-family-2 mb-5 text-muted">
+                        Servizi Accessori per tutti i piani
+                    </h2>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/hardware.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Video hardware</h4>
+                                    <p class="card-text text-secondary">Fornitura hardware video (ipcamera e accessori)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/dvr.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">DVR Recording</h4>
+                                    <p class="card-text text-secondary">Installazione apparato nvr o dvr per registrazioni</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/collaudo.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Local Work</h4>
+                                    <p class="card-text text-secondary">Sopralluogo, installazione e collaudo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/plugin.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Embedding web</h4>
+                                    <p class="card-text text-secondary">Widget sul sito</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/lock.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Area Privata</h4>
+                                    <p class="card-text text-secondary">Live area riservata sul sito per utenti registrati</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/extract.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Estrazione video</h4>
+                                    <p class="card-text text-secondary">Recupero flussi video</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/schedule.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Schedule streaming</h4>
+                                    <p class="card-text text-secondary">I flussi video possono essere programmati a
+                                        seconda delle esigenze</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="card h-100 border-0">
+                                <img class="card-img-top" src="assets/img/accessory/youtube-managing.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Canale YouTube</h4>
+                                    <p class="card-text text-secondary">Provvediamo all'apertura del famoso canale
+                                        social per essere più vicino ai tuoi followers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.section-content -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#accessory -->
+
+        <!-- #testimonials -->
+        <section id="testimonials" class="text-light bg-black position-relative jarallax" style="background-image: url(assets/img/jarallax/1.jpg);">
+
+            <div class="bg-black opacity-8 position-absolute w-100 h-100"></div>
+
+            <!-- .container -->
+            <div class="container py-7 position-relative">
+
+                <!-- .section-title -->
+                <div class="section-title text-center">
+
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class="bg-primary py-2 mb-3 display-4">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="font-family-2 mb-6 display-4">
+                        Case History
+                    </h2>
+
+                </div>
+                <!-- /.section-title -->
+
+                <!-- .section-content -->
+                <div class="section-content text-center">
+
+                    <ul class="owl-carousel owl-theme" data-options="{
+                        loop: true,
+		                margin: 30,
+		                autoplay: 7000,
+		                autoWidth: false,
+		                nav: false,
+		                dots: true,
+		                items: 3,
+		                smartSpeed: 1500,
+		                autoplayHoverPause: true,
+		                responsive: {
+		                	576: {items: 2},
+		                	768: {items: 3}
+		                }
+                    }">
+                        <li class="item d-flex flex-column align-items-center justify-content-center">
+                            <a class="d-block mb-4 w-sm-50" href="https://www.youtube.com/c/parrocchiamonteforte/live" target="_blank">
+                                <img class="rounded-circle" src="assets/img/clients/1.jpg" alt="">
+                            </a>
+                            <p>Tutte le celebrazioni possono essere viste dal vivo sulla piattaforma Youtube e dal sito.</p>
+                            <p class="text-primary mt-2">
+                                <i class="fa fa-lg fa-quote-left"></i>
+                            </p>
+                            <p class="text-uppercase font-weight-bold small mb-1">Parrocchia Monteforte d'Alpone (VR)</p>
+                            <p class="text-uppercase small">AutoLive Streaming on Youtube</p>
+                        </li>
+                        <li class="item d-flex flex-column align-items-center">
+                            <a class="d-block mb-4 w-sm-50" href="https://www.parrocchianegrar.it/" target="_blank">
+                                <img class="rounded-circle" src="assets/img/clients/2.jpg" alt="">
+                            </a>
+                            <p>Tutte le celebrazioni possono essere viste dal vivo dal sito della parrocchia.</p>
+                            <p class="text-primary mt-2">
+                                <i class="fa fa-lg fa-quote-left"></i>
+                            </p>
+                            <p class="text-uppercase font-weight-bold small mb-1">Parrocchia di Negrar (VR)</p>
+                            <p class="text-uppercase small">AutoLive Streaming</p>
+                        </li>
+                        <li class="item d-flex flex-column align-items-center">
+                            <a class="d-block mb-4 w-sm-50" href="#contact">
+                                <img class="rounded-circle" src="assets/img/clients/3.jpg" alt="">
+                            </a>
+                            <p>Il prossimo case History sara il tuo?</p>
+                            <p class="text-primary mt-2">
+                                <i class="fa fa-lg fa-quote-left"></i>
+                            </p>
+                            <p class="text-uppercase font-weight-bold small mb-1">Per maggiori informazioni</p>
+                            <p class="text-uppercase small">Contattaci</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.section-content -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#testimonials -->
+
+        <!-- #partners -->
+        <section id="partners" class="text-light bg-dark">
+
+            <!-- .container -->
+            <div class="container py-7">
+
+                <ul class="owl-carousel" data-options="{
+                        loop: true,
+		                margin: 30,
+		                autoplay: 6000,
+		                autoWidth: false,
+		                nav: false,
+		                dots: false,
+		                items: 4,
+		                smartSpeed: 3000,
+		                autoplayHoverPause: true,
+		                responsive: {
+		                	576: {items: 2},
+		                	768: {items: 3},
+		                	992: {items: 4}
+		                }
+                    }">
+                    <li class="item d-flex align-items-center justify-content-center">
+                        <a class="d-block w-100" href="https://ewake.it" target="_blank">
+                            <img src="assets/img/partners/ewake.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-center">
+                        <a class="d-inline-block w-100" href="javascript:;">
+                            <img src="assets/img/partners/gxcom.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-center">
+                        <a class="d-inline-block w-100" href="https://prosmedia.org" target="_blank">
+                            <img src="assets/img/partners/prosmedia.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-center">
+                        <a class="d-inline-block w-100" href="javascript:;">
+                            <img src="assets/img/partners/5.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-center">
+                        <a class="d-inline-block w-100" href="javascript:;">
+                            <img src="assets/img/partners/6.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-center">
+                        <a class="d-inline-block w-100" href="javascript:;">
+                            <img src="assets/img/partners/7.png" alt=""/>
+                        </a>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-center">
+                        <a class="d-inline-block w-100" href="javascript:;">
+                            <img src="assets/img/partners/3.png" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#partners -->
+
+        <!-- #contact -->
+        <section id="contact" class="text-white bg-black">
+
+            <!-- .container -->
+            <div class="container py-7">
+
+                <!-- .section-title -->
+                <div class="section-title text-center">
+
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class="bg-primary py-2 mb-3 display-4">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="font-family-2 mb-6 display-4">
+                        Contattaci
+                    </h2>
+
+                </div>
+                <!-- /.section-title -->
+
+                <!-- .section-content -->
+                <div class="section-content text-center">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+
+                            <p class="mb-5 wow fadeIn" data-wow-duration="1s">Domande? Scrivici, ti risponderemo al più presto.</p>
+
+                            <form data-sync class="needs-validation" novalidate method="POST" autocomplete="off" role="form" action="https://formspree.io/mgenqldw">
+
+                                <div class="form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                                    <input required class="form-control text-white text-center" name="name" type="text" placeholder="Nome">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <input required class="form-control text-white text-center" name="email" type="email" placeholder="Email">
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <textarea required class="form-control text-white text-center" name="message" rows="5" placeholder="Messaggio"></textarea>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-check text-muted text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <input required class="form-check-input" name="privacy" type="checkbox" value="1" id="contact-privacy">
+                                    <label class="form-check-label" for="contact-privacy">
+                                        Ho letto la <a data-fancybox data-type="ajax" data-filter="main" data-caption="Privacy Policy" data-src="/privacy.html" title="Privacy Policy" href="javascript:;">Privacy Policy</a> e acconsento
+                                    </label>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <br>
+
+                                <div class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                                    <button class="btn btn-primary" type="submit" autocomplete="off" data-loading-text="<span class='spinner-border spinner-border-sm mr-1' role='status' aria-hidden='true'></span> Attendere&hellip;">
+                                        Invia <i class="fa fa-paper-plane ml-1"></i>
+                                    </button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.section-content -->
+
+            </div>
+            <!-- /.container -->
+
+        </section>
+        <!-- /#contact -->
 
     </div>
-    <!-- /CONTENT -->
+    <!-- /.content -->
 
-    <!-- TOP TOP -->
-    <div class="edina_tm_to_top_wrap">
-        <a href="javascript:;">Torna su</a>
-    </div>
-    <!-- /TO TOP -->
+    <!-- footer -->
+    <footer class="text-light bg-dark text-center p-5">
+        <p class="small mb-0 wow fadeIn" data-wow-duration="1s">&copy; Copyright 2020 - <b>I Live You</b></p>
+    </footer>
+    <!-- /footer -->
+
+    <a id="scrollto-top" class="scrollto text-uppercase text-decoration-none small" data-target="0" href="javascript:;">
+        <i class="fas fa-chevron-left align-middle"></i> Indietro
+    </a>
 
 </div>
-<!-- / WRAPPER ALL -->
+<!-- /.wrapper -->
 
 <script src="//kit.fontawesome.com/848dd343a9.js" crossorigin="anonymous"></script>
 <script src="https://www.youtube.com/iframe_api?v=3.3.3" id="YTAPI"></script>
@@ -919,7 +857,9 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175318299-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-175318299-1');
 </script>

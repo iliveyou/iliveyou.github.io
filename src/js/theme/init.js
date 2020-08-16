@@ -10,27 +10,27 @@
 	// here all ready functions
 	
 	edina_tm_hamburger();
-	edina_tm_imgtosvg();
-	edina_tm_magnific_popup();
-	edina_tm_jarallax();
-	edina_tm_portfolio();
-	edina_tm_portfolio_animation();
-	edina_tm_totop();
-	edina_tm_totop_myhide();
-	edina_tm_nav_bg_scroll();
-	edina_tm_anchor();
+	//edina_tm_imgtosvg();
+	//edina_tm_magnific_popup();
+	//edina_tm_jarallax();
+	//edina_tm_portfolio();
+	//edina_tm_portfolio_animation();
+	//edina_tm_totop();
+	//edina_tm_totop_myhide();
+	//edina_tm_nav_bg_scroll();
+	//edina_tm_anchor();
 	//edina_tm_contact_form();
-	edina_tm_owl_carousel();
-	edina_tm_text_animation();
-	edina_tm_animate_text();
-	edina_tm_popupscroll();
-	edina_tm_popup_blog();
+	//edina_tm_owl_carousel();
+	//edina_tm_text_animation();
+	//edina_tm_animate_text();
+	//edina_tm_popupscroll();
+	//edina_tm_popup_blog();
 
 	
 	jQuery(window).on('scroll',function(){
 		//e.preventDefault();
-		edina_tm_totop_myhide();
-		edina_tm_nav_bg_scroll();
+		//edina_tm_totop_myhide();
+		//edina_tm_nav_bg_scroll();
 	});
 
 }(jQuery));
@@ -44,7 +44,7 @@
 // ---------------    IMAGE TO SVG    ------------------
 // -----------------------------------------------------
 
-function edina_tm_imgtosvg(){
+/*function edina_tm_imgtosvg(){
 	
 	"use strict";
 	
@@ -72,7 +72,7 @@ function edina_tm_imgtosvg(){
 		}, 'xml');
 
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // ---------------  HAMBURGER  -------------------------
@@ -103,7 +103,7 @@ function edina_tm_hamburger(){
 // --------------    MAGNIFIC POPUP    -----------------
 // -----------------------------------------------------
 
-function edina_tm_magnific_popup(){
+/*function edina_tm_magnific_popup(){
 	
 	"use strict";
 	
@@ -144,13 +144,13 @@ function edina_tm_magnific_popup(){
 			fixedContentPos: false
 		});
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // --------------------    JARALLAX    -----------------
 // -----------------------------------------------------
 
-function edina_tm_jarallax(){
+/*function edina_tm_jarallax(){
 	
 	"use strict";
 
@@ -168,7 +168,7 @@ function edina_tm_jarallax(){
 			speed: customSpeed
 		});
 	});
-}
+}*/
 
 // -------------------------------------------------
 // -----------------    PORTFOLIO    ---------------
@@ -176,7 +176,7 @@ function edina_tm_jarallax(){
 
 // filterable 
 
-function edina_tm_portfolio(){
+/*function edina_tm_portfolio(){
 
 	"use strict";
 
@@ -209,9 +209,9 @@ function edina_tm_portfolio(){
 			});	
 		}
 	//}
-}
+}*/
 
-function edina_tm_portfolio_animation(){
+/*function edina_tm_portfolio_animation(){
 	
 	"use strict";
 	
@@ -236,7 +236,7 @@ function edina_tm_portfolio_animation(){
 			
 		});
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // --------------------    TOTOP    --------------------
@@ -273,15 +273,22 @@ function edina_tm_totop_myhide(){
 // ------------    NAV BACKGROUND  SCROLL    -----------
 // -----------------------------------------------------
 
-function edina_tm_nav_bg_scroll(){
+/**function edina_tm_nav_bg_scroll(){
 	
 	"use strict";
 	
-	var header 			= jQuery('.edina_tm_header');
+	var header 			= jQuery('header');
 	var windowScroll	= jQuery(window).scrollTop();
 	var W				= jQuery(window).width();
 	
 	if(W>1040){
+		if(windowScroll >= '100'){
+			header.addClass('scroll');
+		}
+		else{
+			header.removeClass('scroll');
+		}
+
 		jQuery(window).scroll(function(){
             if(windowScroll >= '100'){
                 header.addClass('scroll');
@@ -291,13 +298,13 @@ function edina_tm_nav_bg_scroll(){
             }
         });
 	} 
-}
+}*/
 
 // -----------------------------------------------------
 // ------------    ANCHOR NAVIGATION    ----------------
 // -----------------------------------------------------
 
-function edina_tm_anchor(){
+/*function edina_tm_anchor(){
 	
 	"use strict";
 	
@@ -316,7 +323,7 @@ function edina_tm_anchor(){
 		});
 		return false;	
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // ----------------    CONTACT FORM    -----------------
@@ -368,11 +375,11 @@ function edina_tm_anchor(){
 // --------------------    OWL CAROUSEL    -------------
 // -----------------------------------------------------
 
-function edina_tm_owl_carousel(){
+/*function edina_tm_owl_carousel(){
 	
 	"use strict";
 	
-	var carusel2			= jQuery('.edina_tm_testimonial_wrap .owl-carousel');
+	var carusel2			= jQuery('#testimonials .owl-carousel');
   	carusel2.owlCarousel({
 		loop:true,
 		margin:70,
@@ -392,7 +399,7 @@ function edina_tm_owl_carousel(){
 		}
 	});
 	
-	var carusel3			= jQuery('.edina_tm_partners_wrap .owl-carousel');
+	var carusel3			= jQuery('#partners .owl-carousel');
   	carusel3.owlCarousel({
 		loop:true,
 		margin:40,
@@ -411,7 +418,7 @@ function edina_tm_owl_carousel(){
 			1920:{items:4}
 		}
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // --------------------    WOW JS    -------------------
@@ -423,7 +430,7 @@ function edina_tm_owl_carousel(){
 // ---------------    HERO TEXT ANIATION  --------------
 // -----------------------------------------------------
 
-function edina_tm_text_animation(){
+/*function edina_tm_text_animation(){
 	
 	"use strict";
 	
@@ -438,13 +445,13 @@ function edina_tm_text_animation(){
 		var window_offset = jQuery(window).scrollTop();
 		titleHolder.css({opacity:1 - (window_offset/height), marginTop:(window_offset/height)*200});
 	});
-}
+}*/
 
 // -------------------------------------------------
 // -------------   ANIMATE TEXT  -------------------
 // -------------------------------------------------
 
-function edina_tm_animate_text(){
+/*function edina_tm_animate_text(){
 	
 	"use strict";
 	
@@ -456,13 +463,13 @@ function edina_tm_animate_text(){
 			startDelay: 1e3,
 			backDelay: 2e3
 		});
-}
+}*/
 
 // -----------------------------------------------------
 // -------------------    POPUP BLOG    ----------------
 // -----------------------------------------------------
 
-function edina_tm_popup_blog(){
+/*function edina_tm_popup_blog(){
 	"use strict";
 	var li				= jQuery('.edina_tm_list_wrap.blog_list .inner_list');
 	var popupBox		= jQuery('#edina_tm_popup_blog');
@@ -494,13 +501,13 @@ function edina_tm_popup_blog(){
 		popupInner.html('');
 		return false;
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // -------------    BLOG MENU SCROLL -------------------
 // -----------------------------------------------------
 
-function edina_tm_popupscroll(){
+/*function edina_tm_popupscroll(){
 	
 	"use strict";
 	
@@ -524,4 +531,4 @@ function edina_tm_popupscroll(){
 			cursorborder:"0px solid #fff"
 		});
 	});
-}
+}*/

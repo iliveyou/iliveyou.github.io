@@ -1,0 +1,42 @@
+/* =============================================================================
+   utils
+   ========================================================================== */
+
+$font-families: (
+        1: 'Open Sans',
+        2: 'Montserrat',
+        3: 'Lato',
+);
+
+@each $font-id, $font-family in $font-families {
+  .font-family-#{$font-id} {
+    font-family: $font-family, $font-family-base;
+  }
+}
+
+@for $i from 1 through 10 {
+  .z-index-#{$i} {
+    z-index: $i;
+  }
+  .z-index--#{$i} {
+    z-index: -$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .opacity-#{$i} {
+    opacity: #{$i/10};
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+      }
+    }
+  }
+}
