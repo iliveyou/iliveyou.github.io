@@ -9,7 +9,7 @@
 
 	// here all ready functions
 	
-	edina_tm_hamburger();
+	//edina_tm_hamburger();
 	//edina_tm_imgtosvg();
 	//edina_tm_magnific_popup();
 	//edina_tm_jarallax();
@@ -78,7 +78,7 @@
 // ---------------  HAMBURGER  -------------------------
 // -----------------------------------------------------
 
-function edina_tm_hamburger(){
+/*function edina_tm_hamburger(){
 	
 	"use strict";
 	
@@ -97,7 +97,7 @@ function edina_tm_hamburger(){
 		}
 		return false;
 	});
-}
+}*/
 
 // -----------------------------------------------------
 // --------------    MAGNIFIC POPUP    -----------------

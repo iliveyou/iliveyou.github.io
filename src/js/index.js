@@ -62,13 +62,13 @@ import 'jquery.scrollto';
 import 'cookieconsent';
 
 //import './theme/plugins';
-import './theme/init';
+//import './theme/init';
 
 (function($) {
     'use strict';
 
-    let windowScrollTop	= $(window).scrollTop();
     let windowWidth = $(window).width();
+    let windowScrollTop	= $(window).scrollTop();
 
     $.extend({
         //https://stackoverflow.com/a/50319997
@@ -134,7 +134,7 @@ import './theme/init';
 
         var typed_1 = new Typed('#typed-1', {
             stringsElement: '#typed-1-strings',
-            startDelay: 2000,
+            startDelay: 3000,
             typeSpeed: 80,
             backDelay: 3000,
             loop: true,
@@ -195,24 +195,13 @@ import './theme/init';
     let scrollto_next = $('#scrollto-next');
     let scrollto_top = $('#scrollto-top');
 
-    if (windowWidth > 1040) {
+    if (windowWidth > 992) {
 
         if (windowScrollTop > 100){
             header.addClass('scroll');
         } else{
             header.removeClass('scroll');
         }
-
-        $(window).scroll(function() {
-
-            let windowScrollTop	= $(window).scrollTop();
-
-            if (windowScrollTop > 100) {
-                header.addClass('scroll');
-            } else{
-                header.removeClass('scroll');
-            }
-        });
     }
 
     if (windowScrollTop > 100) {
@@ -221,15 +210,44 @@ import './theme/init';
         scrollto_top.fadeOut('slow');
     }
 
+    $(window).resize(function() {
+
+        let windowWidth = $(window).width();
+
+        if (windowWidth > 992) {
+
+            let windowScrollTop = $(window).scrollTop();
+
+            if (windowScrollTop > 100) {
+                header.addClass('scroll');
+            } else {
+                header.removeClass('scroll');
+            }
+        }
+    });
+
     $(window).scroll(function() {
 
         let windowScrollTop	= $(window).scrollTop();
 
         if (windowScrollTop > 100) {
+            header.addClass('scroll');
             scrollto_top.filter(':hidden').fadeIn('slow');
         } else {
+            header.removeClass('scroll');
             scrollto_top.fadeOut('slow');
         }
+
+        if ($.fn.collapse) {
+            if($('.navbar-collapse').hasClass('show')) {
+                $('.navbar-collapse').collapse('hide');
+                $('.hamburger').toggleClass('is-active');
+            }
+        }
+    });
+
+    $('.hamburger').on('click',function() {
+        $(this).toggleClass('is-active');
     });
 
     $.extend($.scrollTo.defaults, {
@@ -346,7 +364,7 @@ import './theme/init';
         }
     });
 
-    $(window).bind('load', function() {
+    $(window).on('load', function() {
 
         new WOW().init();
 

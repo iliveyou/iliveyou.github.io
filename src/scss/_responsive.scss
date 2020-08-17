@@ -47,6 +47,22 @@
 /* da 0px a 992px */
 @include media-breakpoint-down(md) {
 
+  header {
+    background-color: rgba(color('black'), .9);
+    @include box-shadow(0 1px 3px rgba(color('black'), .15));
+
+    .navbar {
+      padding-top: map-get($spacers, 2) !important;
+      padding-bottom: map-get($spacers, 2) !important;
+
+      .navbar-nav {
+
+        &.navbar-center {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 /* da 768px a 992px */
@@ -60,7 +76,7 @@
   //https://www.geeksforgeeks.org/how-to-align-navbar-items-to-center-using-bootstrap-4/
   .navbar-nav {
 
-    &.navbar-lg-center {
+    &.navbar-center {
       position: absolute;
       left: 50%;
       transform: translatex(-50%);
