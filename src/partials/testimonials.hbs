@@ -10,7 +10,7 @@
         <div class="section-title text-center">
 
             <div class="row justify-content-center">
-                <div class="col-2">
+                <div class="col-5 col-md-4 col-lg-3 col-xl-2">
                     <div class="bg-primary py-2 mb-3 display-4">
                         <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                     </div>
@@ -27,7 +27,7 @@
         <!-- .section-content -->
         <div class="section-content text-center">
 
-            <ul class="owl-carousel owl-theme" data-options="{
+            <ul class="owl-carousel owl-theme p-0" data-options="{
                     loop: true,
 		            margin: 30,
 		            autoplay: 7000,
@@ -38,8 +38,9 @@
 		            smartSpeed: 1500,
 		            autoplayHoverPause: true,
 		            responsive: {
-		            	576: {items: 2},
-		            	768: {items: 3}
+		                0: {items: 1}, // from 0 up
+		            	576: {items: 2}, // from 576 up
+		            	768: {items: 3} // from 768 up
 		            }
                 }">
                 <li class="item d-flex flex-column align-items-center justify-content-center">

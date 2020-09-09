@@ -4,7 +4,7 @@
     <!-- .container -->
     <div class="container py-7">
 
-        <ul class="owl-carousel" data-options="{
+        <ul class="owl-carousel p-0" data-options="{
                 loop: true,
 		        margin: 30,
 		        autoplay: 6000,
@@ -15,9 +15,10 @@
 		        smartSpeed: 3000,
 		        autoplayHoverPause: true,
 		        responsive: {
-		        	576: {items: 2},
-		        	768: {items: 3},
-		        	992: {items: 4}
+		            0: {items: 2}, // from 0 up
+		        	576: {items: 2}, // from 576 up
+		        	768: {items: 3}, // from 768 up
+		        	992: {items: 4} // from 992 up
 		        }
             }">
             <li class="item d-flex align-items-center justify-content-center">
