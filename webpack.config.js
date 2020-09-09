@@ -1,17 +1,13 @@
-//https://github.com/taniarascia/webpack-boilerplate
-//https://github.com/manchenkoff/webpack-bootstrap
-//https://stevenwestmoreland.com/2018/01/how-to-include-bootstrap-in-your-project-with-webpack.html
-//https://getbootstrap.com/docs/4.0/getting-started/webpack/
-//https://riptutorial.com/it/webpack
-//https://www.netlify.com/blog/2017/11/30/starting-with-webpack-from-scratch/
-
-const path = require('path');
-const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const path = require('path')
+const webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const TerserWebpackPlugin = require('terser-webpack-plugin')
+const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 /**
  * Base webpack configuration
@@ -24,6 +20,8 @@ module.exports = (env, argv = {}) => {
 
     let isProduction = (argv.mode === 'production');
 
+    let baseUrl = isProduction ? 'https://iliveyou.github.io' : 'https://localhost:8080';
+
     let config = {
 
         context: path.resolve(__dirname, 'src'),
@@ -32,12 +30,13 @@ module.exports = (env, argv = {}) => {
         devServer: {
             contentBase: path.join(__dirname, 'docs'),
             watchContentBase: true,
-            compress: true
+            compress: true,
+            writeToDisk: true, //https://github.com/johnagan/clean-webpack-plugin/issues/96
         },
 
         entry: [
-            './js/index.js',
-            './scss/index.scss',
+            './assets/js/index.js',
+            './assets/scss/index.scss',
         ],
 
         // enable development source maps
@@ -45,15 +44,17 @@ module.exports = (env, argv = {}) => {
         devtool: "inline-source-map",
 
         output: {
-            filename: 'js/app.js',
-            path: path.resolve(__dirname, 'docs/assets'),
-            publicPath: '/assets/'
+            filename: 'assets/js/app.js',
+            path: path.resolve(__dirname, 'docs'),
+            publicPath: '/'
         },
 
         plugins: [
 
+            new CleanWebpackPlugin(),
+
             new MiniCssExtractPlugin({
-                filename: 'css/app.css'
+                filename: 'assets/css/app.css'
             }),
 
             // provide jQuery and Popper.js dependencies
@@ -66,36 +67,132 @@ module.exports = (env, argv = {}) => {
             }),
 
             // copy static assets directory
-            new CopyPlugin({
+            new CopyWebpackPlugin({
                 patterns: [
-                    {from: 'img', to: 'img'},
-                    //{from: 'fonts', to: 'fonts'}
+                    {
+                        from: 'assets/img',
+                        to: 'assets/img',
+                        globOptions: {
+                            ignore: ['**/favicon.*'],
+                        },
+                    },
+                    /*{
+                        from: 'fonts',
+                        to: 'fonts',
+                    },*/
                 ],
             }),
 
+            new FaviconsWebpackPlugin({
+                // Your source logo (required)
+                logo: './assets/img/favicon/favicon.png',
+
+                // optional can be 'webapp' or 'light' - 'webapp' by default
+                mode: 'light', //FIXME - https://stackoverflow.com/a/39206269/3929620
+
+                // optional can be 'webapp' or 'light' - 'light' by default
+                //devMode: 'light',
+
+                // Enable caching and optionally specify the path to store cached data
+                // Note: disabling caching may increase build times considerably
+                //cache: true,
+
+                // Override the publicPath option usually read from webpack configuration
+                //publicPath: '/assets',
+
+                // The directory to output the assets relative to the webpack output dir.
+                // Relative string paths are allowed here ie '../public/static'. If this
+                // option is not set, `prefix` is used.
+                //outputPath: '../docs/assets/img/favicon',
+
+                // Prefix path for generated assets
+                prefix: 'assets/img/favicon',
+
+                // Inject html links/metadata (requires html-webpack-plugin).
+                // This option accepts arguments of different types:
+                //  * boolean
+                //    `false`: disables injection
+                //    `true`: enables injection if that is not disabled in html-webpack-plugin
+                //  * function
+                //    any predicate that takes an instance of html-webpack-plugin and returns either
+                //    `true` or `false` to control the injection of html metadata for the html files
+                //    generated by this instance.
+                //inject: true,
+
+                // Favicons configuration options (see below)
+                //favicons: {}
+            }),
+
             // image optimization
-            new ImageminPlugin({
+            new ImageminWebpackPlugin({
                 // disable for dev builds
                 disable: !isProduction,
                 test: /\.(jpe?g|png|gif)$/i,
-                pngquant: {quality: '70-85'},
+                pngquant: {quality: ['0-70', '0-85']},
                 optipng: {optimizationLevel: 9}
+            }),
+
+            //https://github.com/jantimon/html-webpack-plugin/issues/1004
+            new HtmlWebpackPlugin({
+                template: 'index.hbs', // input template
+                filename: 'index.html', // output file
+                hash: true,
+                templateParameters: {
+                    'title': 'ILIVE.YOU - Lo streaming dove vuoi tu',
+                    'metaDescription': 'Video streaming service',
+                    'metaOgTitle': 'ILIVE.YOU - Lo streaming dove vuoi tu',
+                    'metaOgType': 'website',
+                    'metaOgImage': baseUrl + '/assets/img/logo/logo.png',
+                    'mode': argv.mode,
+                },
+            }),
+
+            new HtmlWebpackPlugin({
+                template: 'privacy.hbs', // input template
+                filename: 'privacy.html', // output file
+                hash: true,
+                templateParameters: {
+                    'title': 'Privacy Policy - ILIVE.YOU - Lo streaming dove vuoi tu',
+                    'metaDescription': 'Video streaming service',
+                    'metaOgTitle': 'Privacy Policy - ILIVE.YOU - Lo streaming dove vuoi tu',
+                    'metaOgType': 'website',
+                    'metaOgImage': baseUrl + '/assets/img/logo/logo.png',
+                    'mode': argv.mode,
+                },
             }),
         ],
 
         optimization: {
             minimizer: [
                 // CSS optimizer
-                new OptimizeCSSAssetsPlugin(),
+                new OptimizeCSSAssetsWebpackPlugin(),
                 // JS optimizer by default
-                new TerserPlugin(),
+                new TerserWebpackPlugin(),
             ],
         },
 
         module: {
 
             rules: [
-                // styles loader
+                {
+                    test: /\.html$/i,
+                    loader: 'html-loader'
+                },
+
+                {
+                    test: /\.hbs$/,
+                    loader: "handlebars-loader",
+                    query: {
+                        //rootRelative: path.resolve(__dirname, 'src') + '/',
+                        partialDirs: [
+                            path.join(__dirname, 'src', 'partials')
+                        ],
+                        helperDirs: [
+                            path.join(__dirname, 'src', 'assets', 'js', 'helpers')
+                        ],
+                    }
+                },
+
                 {
                     test: /\.(sa|sc|c)ss$/,
                     use: [
@@ -105,7 +202,6 @@ module.exports = (env, argv = {}) => {
                     ],
                 },
 
-                // images loader
                 {
                     test: /\.(png|jpe?g|gif)$/,
                     loaders: [
@@ -120,24 +216,25 @@ module.exports = (env, argv = {}) => {
 
                                         const relativePath = path.relative('node_modules', resourcePath);
 
-                                        return 'img/lib/' + relativePath + '[name].[ext]';
+                                        return 'assets/img/lib/' + relativePath + '[name].[ext]';
                                     }
 
                                     return "[path][name].[ext]";
                                 },
+                                //https://stackoverflow.com/a/59075858/3929620
+                                esModule: false,
                             }
                         }
                     ],
                 },
 
-                // fonts loader
                 {
                     test: /\.(woff|woff2|eot|ttf|otf)$/,
                     use: [
                         {
                             loader: "file-loader",
                             options: {
-                                name: "fonts/[name].[ext]"
+                                name: "assets/fonts/[name].[ext]"
                             }
                         },
                     ],

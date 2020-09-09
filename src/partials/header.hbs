@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{metaDescription}}">
+    <meta property="og:title" content="{{metaOgTitle}}">
+    <meta property="og:type" content="{{metaOgType}}">
+    <meta property="og:url" content="{{baseUrl}}/{{htmlWebpackPlugin.options.filename}}">
+    <meta property="og:image" content="{{metaOgImage}}">
+</head>
+<body data-spy="scroll" data-target="#navbar-main" data-offset="70">
+{{> preloader}}
+
+<!-- .wrapper -->
+<div class="wrapper">
+
+    <!-- header -->
+    <header class="fixed-top" >
+
+        <!-- .container -->
+        <div class="container">
+
+            {{> navbar-main}}
+
+        </div>
+        <!-- /.container -->
+
+    </header>
+    <!-- /header -->
+
+    <!-- .content -->
+    <div class="content">

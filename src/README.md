@@ -1,0 +1,23 @@
+### WebPack usefull links:
+
+- https://github.com/taniarascia/webpack-boilerplate
+- https://github.com/manchenkoff/webpack-bootstrap
+- https://stevenwestmoreland.com/2018/01/how-to-include-bootstrap-in-your-project-with-webpack.html
+- https://getbootstrap.com/docs/4.0/getting-started/webpack/
+- https://riptutorial.com/it/webpack
+- https://www.netlify.com/blog/2017/11/30/starting-with-webpack-from-scratch/
+- https://github.com/jantimon/html-webpack-plugin/issues/1330
+- https://dev.to/pldg/build-a-simple-static-site-generator-with-webpack-5a29
+- https://github.com/jantimon/html-webpack-plugin/issues/1004
+- https://dev.to/jantimon/html-webpack-plugin-4-has-been-released-125d
+- https://github.com/pldg/learn-webpack/tree/master/static-site-generator
+- https://github.com/jaketrent/html-webpack-template
+- https://medium.com/@jaketripp/cool-things-with-webpack-9a8019bdbd4a
+- https://github.com/sagold/handlebars-webpack-plugin
+- https://github.com/jantimon/html-webpack-plugin/issues/1416
+- https://chriscourses.com/blog/loading-fonts-webpack
+- https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/
+- https://www.miguel.nz/blog/how-to-use-google-analytics-with-vue-cli-and-webpack/
+- https://stackoverflow.com/a/49055082/3929620
+- https://emberigniter.com/how-to-equals-conditional-comparison-handlebars/
+- https://stackoverflow.com/a/51976315/3929620

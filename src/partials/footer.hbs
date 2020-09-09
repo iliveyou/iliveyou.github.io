@@ -1,0 +1,32 @@
+    </div>
+    <!-- /.content -->
+
+    <!-- footer -->
+    <footer class="text-light bg-dark text-center p-5">
+        <p class="small mb-0 wow fadeIn" data-wow-duration="1s">&copy; Copyright 2020 - <b>I Live You</b></p>
+    </footer>
+    <!-- /footer -->
+
+    <a id="scrollto-top" class="scrollto text-uppercase text-decoration-none small" data-target="0" href="javascript:;">
+        <i class="fas fa-chevron-left"></i> Indietro
+    </a>
+
+</div>
+<!-- /.wrapper -->
+
+    {{! FIXME }}
+    <script src="https://www.youtube.com/iframe_api?v=3.3.3" id="YTAPI"></script>
+
+    {{#ifeq mode 'production'}}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175318299-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-175318299-1');
+    </script>
+    {{/ifeq}}
+</body>
+</html>

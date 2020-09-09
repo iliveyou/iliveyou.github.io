@@ -71,6 +71,7 @@ import 'cookieconsent';
     let windowScrollTop	= $(window).scrollTop();
 
     $.extend({
+
         //https://stackoverflow.com/a/50319997
         //https://jsfiddle.net/trixta/T29Kx/
         //https://www.html5rocks.com/en/tutorials/forms/constraintvalidation/
@@ -97,35 +98,35 @@ import 'cookieconsent';
 
                     form.classList.add('was-validated');
                 }, false);
-            });
 
-            // before submit
-            var elements = document.querySelectorAll('.form-control, .form-check-input, .custom-control-input, .custom-file-input');
-            $.each(elements, function(index, element) {
-                if (element.willValidate === true) {
-                    $(element).keyup(function() {
-                        if (element.checkValidity() === true) {
-                            $(element).removeClass('is-invalid').addClass('is-valid');
-                        } else {
-                            $(element).removeClass('is-valid').addClass('is-invalid');
-                            $(element).siblings('.invalid-feedback').html( $(element)[0].validationMessage );
-                        }
-                    });
-                }
-            });
+                // before submit
+                var elements = $(form).find('.form-control, .form-check-input, .custom-control-input, .custom-file-input');
+                $.each(elements, function(index, element) {
+                    if (element.willValidate === true) {
+                        $(element).keyup(function() {
+                            if (element.checkValidity() === true) {
+                                $(element).removeClass('is-invalid').addClass('is-valid');
+                            } else {
+                                $(element).removeClass('is-valid').addClass('is-invalid');
+                                $(element).siblings('.invalid-feedback').html( $(element)[0].validationMessage );
+                            }
+                        });
+                    }
+                });
 
-            var elements = document.querySelectorAll('.custom-select');
-            $.each(elements, function(index, element) {
-                if (element.willValidate === true) {
-                    $(element).change(function() {
-                        if (element.checkValidity() === true) {
-                            $(element).removeClass('is-invalid').addClass('is-valid');
-                        } else {
-                            $(element).removeClass('is-valid').addClass('is-invalid');
-                            $(element).siblings('.invalid-feedback').html( $(element)[0].validationMessage );
-                        }
-                    });
-                }
+                var elements = $(form).find('.custom-select');
+                $.each(elements, function(index, element) {
+                    if (element.willValidate === true) {
+                        $(element).change(function() {
+                            if (element.checkValidity() === true) {
+                                $(element).removeClass('is-invalid').addClass('is-valid');
+                            } else {
+                                $(element).removeClass('is-valid').addClass('is-invalid');
+                                $(element).siblings('.invalid-feedback').html( $(element)[0].validationMessage );
+                            }
+                        });
+                    }
+                });
             });
         },
     });
@@ -151,15 +152,54 @@ import 'cookieconsent';
         });
     }
 
-    //BHACKCNDMW8
-    let min = 3;
-    let max = 10000;
+    let videoObj = [
+        /*{
+            // video iniziale del mondo che gira scelto da A. Rigon
+            'id': 'rGlqwyBqp50',
+            'startMin': 0,
+            'startMax': 0,
+            'abundance': 0.08
+        },*/
+        {
+            // video lungo di ~3 ore di paesaggi con il drone che si ripetono ogni ~20 min
+            'id': 'BHACKCNDMW8',
+            'startMin': 3,
+            'startMax': 10000,
+            'abundance': 0.08
+        },
+        /*{
+            // video di business persons di ~1 min con scritte finali
+            'id': 'YLN1Argi7ik',
+            'startMin': 0,
+            'startMax': 0,
+            'abundance': 0.08
+        },*/
+        {
+            // video di ~6 min di paesaggi con il drone un po' artistici, con scritte finali
+            'id': 'zdFLVNhB7pQ',
+            'startMin': 20,
+            'startMax': 240,
+            'abundance': 0.08
+        },
+        /*{
+            // video di ~3 min movimentato con il drone, con effetti, rapporto 16:9 troppo stretto
+            'id': 'kTWoeqPXpuo',
+            'startMin': 0,
+            'startMax': 0,
+            'abundance': 1
+        }*/
+    ];
+
+    //https://stackoverflow.com/a/60373915/3929620
+    let videokeys = Object.keys(videoObj);
+    let videoRandomKey = videokeys[Math.floor(Math.random()*videokeys.length)];
+    let video = videoObj[videoRandomKey];
 
     $('.player').YTPlayer({
         //videoURL: '//www.youtube.com/watch?v={VIDEO_ID}',
         //videoURL: '//youtu.be/{VIDEO_ID}',
         //videoURL: '{VIDEO_ID}',
-        videoURL: 'BHACKCNDMW8', // BHACKCNDMW8 rGlqwyBqp50 YLN1Argi7ik
+        videoURL: video.id,
         //coverImage: '//i3.ytimg.com/vi/{VIDEO_ID}/maxresdefault.jpg',
         containment: '#home',
         showControls: false,
@@ -167,8 +207,8 @@ import 'cookieconsent';
         loop: true,
         mute: true,
         optimizeDisplay: true,
-        abundance: 0.08,
-        startAt: Math.floor(Math.random()*(max-min+1)+min),
+        abundance: video.abundance,
+        startAt: Math.floor(Math.random()*(video.startMax-video.startMin+1)+video.startMin),
     });
 
     //https://stackoverflow.com/a/32636784/3929620
