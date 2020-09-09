@@ -13,16 +13,16 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="navbar-nav navbar-center font-family-2" id="navbar-main">
             <li class="nav-item">
-                <a class="nav-link scrollto" href="#home">Home</a>
+                <a class="nav-link{{#ifeq page 'index'}} scrollto{{/ifeq}}" href="{{#ifnoteq page 'index'}}{{baseUrl}}/{{/ifnoteq}}#home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link scrollto" href="#about">Profilo</a>
+                <a class="nav-link{{#ifeq page 'index'}} scrollto{{/ifeq}}" href="{{#ifnoteq page 'index'}}{{baseUrl}}/{{/ifnoteq}}#about">Profilo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link scrollto" href="#services">Servizi</a>
+                <a class="nav-link{{#ifeq page 'index'}} scrollto{{/ifeq}}" href="{{#ifnoteq page 'index'}}{{baseUrl}}/{{/ifnoteq}}#services">Servizi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link scrollto" href="#prices">Prezzi</a>
+                <a class="nav-link{{#ifeq page 'index'}} scrollto{{/ifeq}}" href="{{#ifnoteq page 'index'}}{{baseUrl}}/{{/ifnoteq}}#prices">Prezzi</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link scrollto" href="#testimonials">Case History</a>
