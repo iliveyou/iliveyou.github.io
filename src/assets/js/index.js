@@ -156,36 +156,41 @@ import 'cookieconsent';
         /*{
             // video iniziale del mondo che gira scelto da A. Rigon
             'id': 'rGlqwyBqp50',
-            'startMin': 0,
-            'startMax': 0,
+            'startAtMin': 0,
+            'startAtMax': 0,
+            'stopAt': 0,
             'abundance': 0.08
         },*/
         {
             // video lungo di ~3 ore di paesaggi con il drone che si ripetono ogni ~20 min
             'id': 'BHACKCNDMW8',
-            'startMin': 3,
-            'startMax': 10000,
+            'startAtMin': 3,
+            'startAtMax': 10000,
+            'stopAt': 0,
             'abundance': 0.08
         },
         /*{
             // video di business persons di ~1 min con scritte finali
             'id': 'YLN1Argi7ik',
-            'startMin': 0,
-            'startMax': 0,
+            'startAtMin': 0,
+            'startAtMax': 0,
+            'stopAt': 0,
             'abundance': 0.08
         },*/
         {
             // video di ~6 min di paesaggi con il drone un po' artistici, con scritte finali
             'id': 'zdFLVNhB7pQ',
-            'startMin': 20,
-            'startMax': 240,
+            'startAtMin': 20,
+            'startAtMax': 240,
+            'stopAt': 332,
             'abundance': 0.08
         },
         /*{
             // video di ~3 min movimentato con il drone, con effetti, rapporto 16:9 troppo stretto
             'id': 'kTWoeqPXpuo',
-            'startMin': 0,
-            'startMax': 0,
+            'startAtMin': 0,
+            'startAtMax': 0,
+            'stopAt': 0,
             'abundance': 1
         }*/
     ];
@@ -208,7 +213,8 @@ import 'cookieconsent';
         mute: true,
         optimizeDisplay: true,
         abundance: video.abundance,
-        startAt: Math.floor(Math.random()*(video.startMax-video.startMin+1)+video.startMin),
+        startAt: Math.floor(Math.random()*(video.startAtMax-video.startAtMin+1)+video.startAtMin),
+        stopAt: typeof video.stopAt !== 'undefined' ? video.stopAt : 0
     });
 
     //https://stackoverflow.com/a/32636784/3929620
