@@ -162,7 +162,7 @@ import 'cookieconsent';
             'abundance': 0.08
         },*/
         {
-            // video lungo di ~3 ore di paesaggi con il drone che si ripetono ogni ~20 min
+            // video di ~3 ore di paesaggi con il drone che si ripetono ogni ~20 min
             'id': 'BHACKCNDMW8',
             'startAtMin': 3,
             'startAtMax': 10000,
@@ -192,7 +192,15 @@ import 'cookieconsent';
             'startAtMax': 0,
             'stopAt': 0,
             'abundance': 1
-        }*/
+        },*/
+        {
+            // video di ~3 ore di boschi non solo con il drone, si ripetono ogni ~20 min
+            'id': 'hlWiI4xVXKY',
+            'startAtMin': 0,
+            'startAtMax': 10000,
+            'stopAt': 0,
+            'abundance': 0.08
+        },
     ];
 
     //https://stackoverflow.com/a/60373915/3929620
