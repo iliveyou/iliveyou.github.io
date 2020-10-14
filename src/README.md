@@ -21,3 +21,5 @@
 - https://stackoverflow.com/a/49055082/3929620
 - https://emberigniter.com/how-to-equals-conditional-comparison-handlebars/
 - https://stackoverflow.com/a/51976315/3929620
+- https://medium.com/hackernoon/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758
+- https://css-tricks.com/css-sprites/

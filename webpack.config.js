@@ -138,6 +138,7 @@ module.exports = (env, argv = {}) => {
                 filename: 'index.html', // output file
                 hash: true,
                 templateParameters: {
+                    'baseUrl': baseUrl,
                     'title': 'ILIVE.YOU - Lo streaming dove vuoi tu',
                     'metaDescription': 'Video streaming service',
                     'metaOgTitle': 'ILIVE.YOU - Lo streaming dove vuoi tu',
@@ -153,6 +154,7 @@ module.exports = (env, argv = {}) => {
                 filename: 'la-parrocchia-di-monteforte-d-alpone-pioniera-della-santa-messa-in-streaming-su-youtube-per-contrastare-il-coronavirus.html', // output file
                 hash: true,
                 templateParameters: {
+                    'baseUrl': baseUrl,
                     'title': 'La parrocchia di Monteforte d\'Alpone pioniera della Santa Messa in streaming su youtube - ILIVE.YOU - Lo streaming dove vuoi tu',
                     'metaDescription': 'La parrocchia di Monteforte d\'Alpone pioniera della Santa Messa in streaming su youtube per contrastare il coronavirus',
                     'metaOgTitle': 'La parrocchia di Monteforte d\'Alpone pioniera della Santa Messa in streaming su youtube - ILIVE.YOU - Lo streaming dove vuoi tu',
@@ -165,12 +167,13 @@ module.exports = (env, argv = {}) => {
 
             new HtmlWebpackPlugin({
                 template: 'testimonial-parrocchia-negrar.hbs', // input template
-                filename: 'parrocchia-negrar-lorem-ipsum-dolor-sit-amet.html', // output file
+                filename: 'lo-streaming-automatico-della-parrocchia-di-monteforte-d-alpone-adottato-anche-dalla-parrocchia-di-s-martino-di-negrar.html', // output file
                 hash: true,
                 templateParameters: {
-                    'title': 'Parrocchia di Negrar Lorem ipsum dolor sit amet - ILIVE.YOU - Lo streaming dove vuoi tu',
-                    'metaDescription': 'Parrocchia di Negrar Lorem ipsum dolor sit amet',
-                    'metaOgTitle': 'Parrocchia di Negrar Lorem ipsum dolor sit amet - ILIVE.YOU - Lo streaming dove vuoi tu',
+                    'baseUrl': baseUrl,
+                    'title': 'Lo streaming automatico della parrocchia di Monteforte d\'Alpone adottato anche dalla parrocchia di S. Martino di Negrar - ILIVE.YOU - Lo streaming dove vuoi tu',
+                    'metaDescription': 'Lo streaming automatico della parrocchia di Monteforte d\'Alpone adottato anche dalla parrocchia di S. Martino di Negrar',
+                    'metaOgTitle': 'Lo streaming automatico della parrocchia di Monteforte d\'Alpone adottato anche dalla parrocchia di S. Martino di Negrar - ILIVE.YOU - Lo streaming dove vuoi tu',
                     'metaOgType': 'website',
                     'metaOgImage': baseUrl + '/assets/img/logo/logo.png',
                     'page': 'testimonial',
@@ -183,6 +186,7 @@ module.exports = (env, argv = {}) => {
                 filename: 'privacy.html', // output file
                 hash: true,
                 templateParameters: {
+                    'baseUrl': baseUrl,
                     'title': 'Privacy Policy - ILIVE.YOU - Lo streaming dove vuoi tu',
                     'metaDescription': 'Video streaming service',
                     'metaOgTitle': 'Privacy Policy - ILIVE.YOU - Lo streaming dove vuoi tu',

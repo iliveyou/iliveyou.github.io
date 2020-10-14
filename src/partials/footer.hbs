@@ -3,7 +3,10 @@
 
     <!-- footer -->
     <footer class="text-light bg-dark text-center p-5">
-        <p class="small mb-0 wow fadeIn" data-wow-duration="1s">&copy; Copyright 2020 - <b>I Live You</b></p>
+        <p class="small mb-0 wow fadeIn" data-wow-duration="1s">
+            &copy; Copyright 2020 - <b>I Live You</b>
+            <br>P.Iva: IT-03841680238
+        </p>
     </footer>
     <!-- /footer -->
 
@@ -16,6 +19,17 @@
 
     {{! FIXME }}
     <script src="https://www.youtube.com/iframe_api?v=3.3.3" id="YTAPI"></script>
+
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v6.0&appId=1177144209303247";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, "script", "facebook-jssdk"));
+        window.___gcfg = {lang: "it"};
+    </script>
 
     {{#ifeq mode 'production'}}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175318299-1"></script>

@@ -72,6 +72,13 @@ import 'cookieconsent';
 
     $.extend({
 
+        popupCenter: function (url,w,h) {
+            var l = Math.floor((screen.width-w)/2); // default width = 640
+            var t = Math.floor((screen.height-h)/2); // default height = 400
+            //return window.open(url,"","width=" + w + ",height=" + h + ",top=" + t + ",left=" + l);
+            return window.open(url,"","scrollbars,width=" + w + ",height=" + h + ",top=" + t + ",left=" + l);
+        },
+
         //https://stackoverflow.com/a/50319997
         //https://jsfiddle.net/trixta/T29Kx/
         //https://www.html5rocks.com/en/tutorials/forms/constraintvalidation/
@@ -304,6 +311,37 @@ import 'cookieconsent';
         $(this).toggleClass('is-active');
     });
 
+    $(document).on('click', '.popup-center', function (e) {
+        e.preventDefault();
+
+        let href = $(this).attr('href');
+
+        let newWin = $.popupCenter(href, 600, 400);
+
+        if(!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
+
+            $.fancybox.open( '<div class="message"><div class="alert alert-warning mb-0">Il tuo browser sta bloccando le finestre popup, aggiungi questo sito alla lista delle eccezioni.</div></div>' );
+        }
+    });
+
+    //https://github.com/bradvin/social-share-urls
+    $(document).on('click', '.popup-facebook', function (e) {
+        FB.ui({
+            method: 'share',
+            display: 'popup',
+            href: $(this).data('share-uri'),
+        }, function(response){
+            //https://stackoverflow.com/a/23884877
+            if (response && !response.error_code) {
+                console.log('OK: '+JSON.stringify(response));
+            } else if (response && response.error_code === 4201) { //Cancelled
+                console.log('User cancelled: '+decodeURIComponent(response.error_message));
+            } else {
+                console.log('Not OK: '+JSON.stringify(response));
+            }
+        });
+    });
+
     $.extend($.scrollTo.defaults, {
         axis: 'y',
         duration: 1000
@@ -311,12 +349,16 @@ import 'cookieconsent';
 
     //https://codepen.io/nxworld/pen/OyRrGy
     //https://stackoverflow.com/a/9430472
-    $('.scrollto').on('click', function(e) {
+    $(document).on('click', '.scrollto', function(e) {
         e.preventDefault();
 
         //FIXED: toltip flickering
         if ($.fn.tooltip) {
             $(this).tooltip('hide');
+        }
+
+        if ($.fn.fancybox) {
+            $.fancybox.close();
         }
 
         let target = typeof $(this).data('target') !== 'undefined' ? $(this).data('target') : $($(this).attr('href'));

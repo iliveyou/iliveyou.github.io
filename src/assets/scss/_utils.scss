@@ -6,11 +6,20 @@ $font-families: (
         1: 'Open Sans',
         2: 'Montserrat',
         3: 'Lato',
+        4: 'Caveat',
 );
 
 @each $font-id, $font-family in $font-families {
   .font-family-#{$font-id} {
-    font-family: $font-family, $font-family-base;
+
+    &,
+    & * {
+      @if ($font-id == 1) {
+        font-family: $font-family-base;
+      } @else {
+        font-family: $font-family, $font-family-base;
+      }
+    }
   }
 }
 
