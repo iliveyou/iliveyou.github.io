@@ -13,7 +13,7 @@ import 'bootstrap/js/dist/collapse';
 import 'bootstrap/js/dist/scrollspy';
 //import 'bootstrap/js/dist/tab';
 //import 'bootstrap/js/dist/toast';
-//import 'bootstrap/js/dist/tooltip';
+import 'bootstrap/js/dist/tooltip';
 
 //https://stackoverflow.com/a/62859961/3929620
 //https://stackoverflow.com/a/61540437/3929620
@@ -231,6 +231,9 @@ import 'cookieconsent';
         startAt: Math.floor(Math.random()*(video.startAtMax-video.startAtMin+1)+video.startAtMin),
         stopAt: typeof video.stopAt !== 'undefined' ? video.stopAt : 0
     });
+
+    //https://stackoverflow.com/a/21273332
+    $('[data-toggle="tooltip"]').tooltip();
 
     //https://stackoverflow.com/a/32636784/3929620
     let ocDefaults = {};
