@@ -5,7 +5,11 @@
     <footer class="text-light bg-dark text-center p-5">
         <p class="small mb-0 wow fadeIn" data-wow-duration="1s">
             &copy; Copyright 2020 - <b>I Live You</b>
+            <br>Via borgo grande, 19/B
+            <br>37044 Cologna Veneta (VR)
+            <br>Italy
             <br>P.Iva: IT-03841680238
+            <br>tel & fax: <a class="text-light" href="tel:+39044284987">+39 0442 84987</a>
         </p>
     </footer>
     <!-- /footer -->
@@ -30,6 +34,27 @@
         }(document, "script", "facebook-jssdk"));
         window.___gcfg = {lang: "it"};
     </script>
+
+    <script>
+        window.intergramId = "151955871";
+        window.intergramCustomizations = {
+            titleClosed: 'Live Chat',
+            titleOpen: 'Live Chat',
+            //closedStyle: 'chat', // button or chat
+            //closedChatAvatarUrl: '', // only used if closedStyle is set to 'chat'
+            //cookieExpiration: 1, // in days. Once opened, closed chat title will be shown as button (when closedStyle is set to 'chat')
+            introMessage: 'Ciao, come possiamo aiutarti?',
+            autoResponse: 'Ricevuto! Rimani 1 minuto in attesa, ti risponderà il primo operatore libero...',
+            autoNoResponse: 'Sembra che gli operatori siano tutti occupati. Per cortesia lasciaci qui i tuoi recapiti (email o telefono), ti ricontatteremo il prima possibile.',
+            placeholderText: 'Scrivi qui il tuo messaggio...',
+            //displayMessageTime: true,
+            mainColor: '#ff0006',
+            //alwaysUseFloatingButton: false,
+            //desktopHeight: 450,
+            //desktopWidth: 370
+        };
+    </script>
+    <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
 
     {{#ifeq mode 'production'}}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175318299-1"></script>

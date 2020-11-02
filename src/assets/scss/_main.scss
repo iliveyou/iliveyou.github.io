@@ -421,7 +421,7 @@ header {
   position: fixed; // TWBS .position-fixed use !important
   display: none;
   right: -10px;
-  bottom: map-get($spacers, 5);
+  bottom: map-get($spacers, 8);
   transform: rotate(-270deg);
 
   i,
