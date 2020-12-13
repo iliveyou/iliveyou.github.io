@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=development --progress --hide-modules",
+    "develop": "webpack --mode=development --progress --hide-modules",
     "production": "webpack --mode=production --progress --hide-modules --devtool=source-maps",
     "watch": "webpack --mode=development --watch",
     "start": "webpack-dev-server --https --cert certs/server.crt --key certs/server.key --mode=development"
@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ini": ">=1.3.6",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.0",
@@ -34,6 +35,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "ini": ">=1.3.6",
     "@fancyapps/fancybox": "^3.5.7",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "animate.css": "^4.1.0",

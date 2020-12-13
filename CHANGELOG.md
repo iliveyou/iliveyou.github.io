@@ -4,7 +4,8 @@
 
 - Added chat widget [`e9ec15c`](https://github.com/iliveyou/iliveyou.github.io/commit/e9ec15c277e36efd173f3757c2b2abc69d4a2673)
 - Updated CHANGELOG [`e3c6613`](https://github.com/iliveyou/iliveyou.github.io/commit/e3c6613b1a841089facb836f4361c523bb19c162)
-- Typo [`d58e951`](https://github.com/iliveyou/iliveyou.github.io/commit/d58e9513d2d023fcb998db23fdd7aa99281890b4)
+- Typo [`f365151`](https://github.com/iliveyou/iliveyou.github.io/commit/f365151c4f9a5c6fdb8027949777b783452c5719)
+- Fixed ini vulnerability in package.json [`7287fb9`](https://github.com/iliveyou/iliveyou.github.io/commit/7287fb96565e485db30de792205d5ddf9a9c5b23)
 - Merge tag 'v1.0.0' into develop [`2d92b00`](https://github.com/iliveyou/iliveyou.github.io/commit/2d92b0006dd64e852f0a0c626b75d4aaf570b446)
 
 ## v1.0.0 - 2020-10-17

@@ -61,7 +61,7 @@ $ npm run start
 - Build sources: 
 
 ```sh
-$ npm run build
+$ npm run develop
 ```
 
 - Start file watcher for recompiling: 
