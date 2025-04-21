@@ -28,6 +28,7 @@ module.exports = (env, argv = {}) => {
 
         // development server with hot-reload
         devServer: {
+            host: "0.0.0.0",
             contentBase: path.join(__dirname, 'docs'),
             watchContentBase: true,
             compress: true,
